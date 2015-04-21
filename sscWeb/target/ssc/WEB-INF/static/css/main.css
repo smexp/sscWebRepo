@@ -1,0 +1,155 @@
+
+#centralbar {
+    height: 94%;
+}
+
+.controlPanels {
+    display: inline-block;
+    height: 94%;
+    min-height: 92%;
+    vertical-align: top;
+    background: #fff;
+    margin-left: 2%;
+    margin-top: 2%;
+    padding: 25px 20px;
+    padding-bottom: 35px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+    -moz-box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+}
+
+.leftControl{
+    width: 20%;
+    text-align: center;
+    border-style: solid; 
+    border-width:thin;
+    border-color: #B4B4B4;
+    border-radius: 4px;
+}
+
+#tabs{
+    width: 73%;
+}
+
+#logout {
+    padding: 3px 5px 3px 5px;
+    margin-right: 10px;
+}
+
+#topbar #loginInfo {
+    color: #fff;
+    font-size:1.3em;
+    line-height: 1.25em;
+    text-decoration: none;
+    opacity: 0.5;
+    font-weight: bold;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.menuButton {
+    padding: 7px 5px 5px 5px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    width: 140px;
+    font-weight: normal;
+    height: 30px;
+
+}
+
+.formButton {
+    padding: 7px 5px 5px 5px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    width: 50px;
+    font-weight: normal;
+    height: 10px;
+
+}
+
+.wrap {
+    height: 100%;
+    width: 100%;
+    
+}
+
+.wrap table {
+    width: 100%;
+    table-layout: fixed;
+}
+
+.inner_table {
+    height: 88%;
+    overflow-y: auto;
+}
+
+table.head {
+    width: 100%;
+}
+
+table tr td {
+    padding: 5px;
+    border: 1px solid #eee;
+    width: 100px;
+    table-layout: fixed;
+    word-wrap: break-word;
+}
+
+table.head tr td {
+    background: #eee;
+}
+#tabs-1  {
+    height: 100%;
+}
+
+.pagination{
+    float:right;
+    margin-top: 10px;
+}
+
+#contentTable tr:hover{
+    background-color: #f3f3f3;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.wrap a {
+    text-decoration: none;
+    outline: none;
+    
+}
+.head {
+   cursor: pointer; 
+}
+
+.load_page {
+ position: fixed;
+ /*display: none; РёР·РЅР°С‡Р°Р»СЊРЅРѕ Р±Р»РѕРєРё СЃРєСЂС‹С‚С‹*/
+}
+/*.hidescreen {
+ z-index: 9998;
+ width: 100%;
+ height: 100%;
+ background: #000000;
+ opacity: 0.7;
+ filter: alpha(opacity=70);
+ left:0;
+ top:0;
+}*/
+.load_page {
+ z-index: 9999; /*Р·РЅР°С‡РµРЅРёРµ РґРѕР»Р¶РЅРѕ Р±РѕР»СЊС€Рµ С‡РµРј РґР»СЏ .hidescreen*/
+ left: 60%;
+ top: 40%;
+ background: #ffffff;
+ padding: 30px 10px;
+ text-align: center;
+ font: normal normal 15px Verdana;
+ border-radius: 3px;
+ margin-left: -125px;
+ width: 250px;
+}
+
+#dialog {
+    font-size: 1.0em;
+    width: 60%;
+}

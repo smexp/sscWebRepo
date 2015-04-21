@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    
+<!--    <bean name="railwayDAO" class="com.ysmal.ssc.dao.RailwayDAO">
+    </bean>-->
+    <bean name="userDAO" class="com.ysmal.ssc.dao.UserDAO">
+    </bean>
+    
+    <bean name="userDetailsServiceImpl" class="com.ysmal.ssc.service.UserDetailsServiceImpl"></bean>
+<!--    <bean name="userService" class="com.ysmal.ssc.service.UserService"></bean>
+    <bean name="ticketService" class="com.ysmal.ssc.service.TicketService"></bean>
+    <bean name="trainService" class="com.ysmal.ssc.service.TrainService"></bean>
+    <bean name="trainTypeService" class="com.ysmal.ssc.service.TrainTypeService"></bean>
+    <bean name="stationService" class="com.ysmal.ssc.service.StationService"></bean>
+    <bean name="pathService" class="com.ysmal.ssc.service.PathService"></bean>-->
+    <bean name="vacancyDAOImpl" class="com.ysmal.ssc.dao.VacancyDAOImpl"></bean>
+    <bean name="managerScanner" class="com.ysmal.ssc.service.ManagerScanner"></bean>
+    <bean name="managerService" class="com.ysmal.ssc.service.ManagerService"></bean>
+    <bean name="vacancyService" class="com.ysmal.ssc.service.VacancyService"></bean>
+    <bean name="mainManager" class="com.ysmal.ssc.server.ThreadManager"></bean>
+    <!--<bean name="hhScanner" class="com.ysmal.ssc.service.HHScanner"></bean>-->
+    
+</beans>
