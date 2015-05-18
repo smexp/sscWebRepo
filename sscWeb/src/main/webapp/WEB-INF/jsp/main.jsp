@@ -6,11 +6,14 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <!--<link rel="stylesheet" type="text/css" media="all" href="${pageContext.request.contextPath}/static/css/jquery-ui.theme.min.css">-->
 
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/jquery-ui.css">
+
+    <%--<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">--%>
     <script src="${pageContext.request.contextPath}/static/js/jquery-1.11.0.min.js"></script>
     <script src="${pageContext.request.contextPath}/static/js/jquery-ui-1.10.3.min.js"></script>
     <script src="${pageContext.request.contextPath}/static/js/jquery.jqpagination.js"></script>
 
+
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/jquery-ui.css">
     <link rel="stylesheet" type="text/css" media="all" href="${pageContext.request.contextPath}/static/css/style.css">
     <link rel="stylesheet" type="text/css" media="all" href="${pageContext.request.contextPath}/static/css/main.css">
     <link rel="stylesheet" type="text/css" media="all" href="${pageContext.request.contextPath}/static/css/jqpagination.css">
@@ -28,14 +31,20 @@
 
     </script>
 </head>
-<body>
-<div id="topbar">
 
+
+<body>
+
+<%--top_element--%>
+<div id="topbar">
     <label id="loginInfo">Пользователь: <sec:authorize access="isAuthenticated()"><sec:authentication property="principal.username" /></sec:authorize></label>
     <a id="logout" class="flatbtn" href="${pageContext.request.contextPath}/logout">Выход</a>
 </div>
+
+<%--central_element--%>
 <div id="centralbar">
 
+    <%--left_panel--%>
     <div class="controlPanels leftControl">
         <h1 class="titlePanel">Управление:</h1>
         <ul>
@@ -46,13 +55,23 @@
         </ul>
     </div>
 
+    <%--central_panel--%>
     <div class="controlPanels" id="tabs" >
+
+        <%--central_tabs--%>
         <ul>
             <li><a href="#tabs-1">Вакансии</a></li>
             <li><a href="#tabs-2">Параметры процессов</a></li>
+            <li><a href="#dialog">Дополнительная вкладка</a><span class="ui-icon ui-icon-close" role="presentation">Remove Tab</span></li>
         </ul>
+
+        <%--tabs_body--%>
+
+        <%--Tab1_general_info--%>
         <div id="tabs-1" >
             <div class="wrap">
+
+                <%--head_table--%>
                 <table class="head" id="sortTableHead">
                     <tr>
 
@@ -78,9 +97,12 @@
                     </tr>
                 </table>
 
+                <%--body_table--%>
                 <div class="inner_table" id="inner_table">
                     <%@include file = "dataTable.jsp" %>
                 </div>
+
+                <%--pagination--%>
                 <div class="pagination">
                     <a href="#" class="first" data-action="first">&laquo;</a>
                     <a href="#" class="previous" data-action="previous">&lsaquo;</a>
@@ -88,20 +110,25 @@
                     <a href="#" class="next" data-action="next">&rsaquo;</a>
                     <a href="#" class="last" data-action="last">&raquo;</a>
                 </div>
+
             </div>
         </div>
 
+        <%--Tab2_system_info--%>
         <div id="tabs-2">
             <div class="wrap">
+
+                <%--additional_info_table--%>
                 <table class="scann_info_header">
                     <tr>
                         <td>Сканнеры текущего пользователя:</td>
                         <td><a id="newThread" class="flatbtn-gray" href="${pageContext.request.contextPath}/logout">Запустить новый процесс</a></td>
                     </tr>
                 </table>
+
+                <%--head_table--%>
                 <table class="head">
                     <tr>
-
                         <td id="name">Имя потока</td>
                         <td id="searchWord">Состояние</td>
                         <td id="dateStart">Дата запуска</td>
@@ -110,36 +137,36 @@
                     </tr>
                 </table>
 
+                <%--body_table--%>
                 <div class="inner_table" >
                     <table id="scannersInfo">
-
                     </table>
                 </div>
+
             </div>
         </div>
 
     </div>
 </div>
 
+<%--hidding_dialog_about_vacantion--%>
 <div id="dialog" title="Информация о вакансии">
     <p> </p>
 </div>
 
+<%--java_scripts--%>
 <script>
-    // global variable
-    sorting = "updatedate";
-    oldSorting = "updatedate";      //last pressed button
-    typeSorting = "desc";
-    //            alert("sorting = " + sorting +" oldSorting=" + oldSorting+ " typeSorting="+typeSorting);
-    //
-    // function for pagination
+    // global variables
+    var sorting = "updatedate";
+    var oldSorting = "updatedate";      //last pressed button
+    var typeSorting = "desc";
+    var tabs = $( "#tabs" ).tabs();
 
     var page_table = function(page) {
-//                alert("Pagetable work page=" + page + " oldSorting="+ oldSorting +" sorting="+sorting+ " typeSorting="+typeSorting);
         getInfo(page, sorting, typeSorting);
-
     };
 
+    //-------------------------------
     function getInfo(page, sorting, typeSorting) {
         $.ajax({
             url: "jsn",
@@ -163,6 +190,16 @@
         });
     }
     //-------------------------------
+    // close icon: removing the tab on click
+    tabs.delegate( "span.ui-icon-close", "click", function() {
+        var panelId = $( this ).closest( "li" ).remove().attr( "aria-controls" );
+//        $( "#" + panelId ).remove();
+        tabs.tabs( "refresh" );
+    });
+
+
+    //-------------------------------
+    // add_new_scanner_function
     function addThread(name, userName) {
         $.ajax({
             url: "addThread",
@@ -181,7 +218,9 @@
 
         });
     }
+
     //-------------------------------------------
+    // get_info_about_running_scanners_function
     function getCurrentThreads(name) {
         $.ajax({
             url: "getThreads",
@@ -212,12 +251,16 @@
         });
     }
 
-    //--------------------------------------------
+    //-------------------------------------------
 
     // events
 
+    //------------------------------------------
+    // update_info_event
     $("#buttonDate").click(getInfo(1, 'updatedate', 'desc'));
 
+    //------------------------------------------
+    // click_on_sort_record_event
     $("#sortTableHead tr td").click(
             function(page) {
                 var selector;
@@ -251,6 +294,8 @@
             }
     );
 
+    //------------------------------------------
+    // open_record_event
     $("#inner_table").on("click", "#contentTable tr", function() {
                 //alert("Info about vacancy " + $(this).attr("id"));
                 var infoVacNum = $(this).attr("id");
@@ -285,19 +330,22 @@
             }
     );
 
-
     //-----------------------------------------
+    // display_paging
     $(".pagination").jqPagination({
         paged: page_table,
         page_string: 'Страница {current_page} из {max_page}'
     });
 
     //------------------------------------------
+    // add_new_scanner_event
     $("#buttonAbout").on("click", function() {
         addThread("JavaThread", "haruba");
     });
-    //addThread("JavaThread")
+
+
     //-----------------------------------------
+    // get_info_about_running_scanners_event
     $("#buttonState").on("click", function() {
         getCurrentThreads("haruba");
     });
