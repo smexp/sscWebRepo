@@ -62,7 +62,7 @@
         <ul>
             <li><a href="#tabs-1">Вакансии</a></li>
             <li><a href="#tabs-2">Параметры процессов</a></li>
-            <li><a href="#dialog">Дополнительная вкладка</a><span class="ui-icon ui-icon-close" role="presentation">Remove Tab</span></li>
+            <li><a href="#tabs-3">Дополнительная вкладка</a><span class="ui-icon ui-icon-close" role="presentation">Remove Tab</span></li>
         </ul>
 
         <%--tabs_body--%>
@@ -161,6 +161,7 @@
     var oldSorting = "updatedate";      //last pressed button
     var typeSorting = "desc";
     var tabs = $( "#tabs" ).tabs();
+    var tabCounter=4;
 
     var page_table = function(page) {
         getInfo(page, sorting, typeSorting);
@@ -250,6 +251,27 @@
 
         });
     }
+
+    //-------------------------------------------
+
+    //-------------------------------------------
+    // click_on_buttonTools
+    $("#buttonTools").click(function addTab(){
+        //иницализируем вкладку
+
+        var     id = "tabs-" + tabCounter,
+                li = "<li><a href=\"#"+id+"\">"+id+"</a><span class=\"ui-icon ui-icon-close\" role=\"presentation\">Remove Tab</span></li>",
+                tabContentHtml = "<p>HELLO</p>";
+
+//добавление вкладки на форму
+
+        $("#tabs").find("ul").append( li );
+        $( "#tabs").append( "<div id=\"" + id + "\"><div class=\"wrap\"><p></p></div></div>" );
+//         $( "#"+id).find(".wrap").append(tabContentHtml+"<p>"+id+"</p>"); //сдвигает нумератор
+        tabs.tabs( "refresh" );
+
+        tabCounter++;
+    })
 
     //-------------------------------------------
 
