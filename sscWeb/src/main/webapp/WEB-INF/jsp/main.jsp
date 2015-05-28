@@ -268,7 +268,9 @@
         $("#tabs").find("ul").append( li );
         $( "#tabs").append( "<div id=\"" + id + "\"><div class=\"wrap\"><p></p></div></div>" );
 //         $( "#"+id).find(".wrap").append(tabContentHtml+"<p>"+id+"</p>"); //сдвигает нумератор
+        //alert(tabCounter);
         tabs.tabs( "refresh" );
+        tabs.tabs( "option", "active", tabCounter-1 );
 
         tabCounter++;
     })
