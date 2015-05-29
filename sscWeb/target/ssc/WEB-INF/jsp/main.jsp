@@ -196,6 +196,7 @@
         var panelId = $( this ).closest( "li" ).remove().attr( "aria-controls" );
 //        $( "#" + panelId ).remove();
         tabs.tabs( "refresh" );
+        tabCounter--;    
     });
 
 
@@ -268,7 +269,9 @@
         $("#tabs").find("ul").append( li );
         $( "#tabs").append( "<div id=\"" + id + "\"><div class=\"wrap\"><p></p></div></div>" );
 //         $( "#"+id).find(".wrap").append(tabContentHtml+"<p>"+id+"</p>"); //сдвигает нумератор
+        //alert(tabCounter);
         tabs.tabs( "refresh" );
+        tabs.tabs( "option", "active", tabCounter-1 );
 
         tabCounter++;
     })
@@ -279,7 +282,7 @@
 
     //------------------------------------------
     // update_info_event
-    $("#buttonDate").click(getInfo(1, 'updatedate', 'desc'));
+    //$("#buttonDate").click(getInfo(1, 'updatedate', 'desc'));
 
     //------------------------------------------
     // click_on_sort_record_event
