@@ -162,6 +162,24 @@
     var typeSorting = "desc";
     var tabs = $( "#tabs" ).tabs();
     var tabCounter=4;
+    var addTab = function (title){
+        //иницализируем вкладку
+
+        var     id = "tabs-" + tabCounter,
+                li = "<li><a href=\"#"+id+"\">"+title.data.titleTab+"</a><span class=\"ui-icon ui-icon-close\" role=\"presentation\">Remove Tab</span></li>",
+                tabContentHtml = "<p>HELLO</p>";
+
+//добавление вкладки на форму
+
+        $("#tabs").find("ul").append( li );
+        $( "#tabs").append( "<div id=\"" + id + "\"><div class=\"wrap\"><p></p></div></div>" );
+        $( "#"+id+" div").append(tabContentHtml+"<p>"+id+"</p>"); //сдвигает нумератор
+        //alert(tabCounter);
+        tabs.tabs( "refresh" );
+        tabs.tabs( "option", "active", tabCounter-1);
+
+        tabCounter++;
+    };
 
     var page_table = function(page) {
         getInfo(page, sorting, typeSorting);
@@ -194,8 +212,9 @@
     // close icon: removing the tab on click
     tabs.delegate( "span.ui-icon-close", "click", function() {
         var panelId = $( this ).closest( "li" ).remove().attr( "aria-controls" );
-//        $( "#" + panelId ).remove();
+        $( "#" + panelId ).remove();
         tabs.tabs( "refresh" );
+        tabCounter--;
     });
 
 
@@ -256,24 +275,7 @@
 
     //-------------------------------------------
     // click_on_buttonTools
-    $("#buttonTools").click(function addTab(){
-        //иницализируем вкладку
-
-        var     id = "tabs-" + tabCounter,
-                li = "<li><a href=\"#"+id+"\">"+id+"</a><span class=\"ui-icon ui-icon-close\" role=\"presentation\">Remove Tab</span></li>",
-                tabContentHtml = "<p>HELLO</p>";
-
-//добавление вкладки на форму
-
-        $("#tabs").find("ul").append( li );
-        $( "#tabs").append( "<div id=\"" + id + "\"><div class=\"wrap\"><p></p></div></div>" );
-//         $( "#"+id).find(".wrap").append(tabContentHtml+"<p>"+id+"</p>"); //сдвигает нумератор
-        //alert(tabCounter);
-        tabs.tabs( "refresh" );
-        tabs.tabs( "option", "active", tabCounter-1 );
-
-        tabCounter++;
-    })
+    $("#buttonTools").on("click",{titleTab:"Настройки"},addTab);
 
     //-------------------------------------------
 
@@ -281,7 +283,7 @@
 
     //------------------------------------------
     // update_info_event
-    $("#buttonDate").click(getInfo(1, 'updatedate', 'desc'));
+    //$("#buttonDate").click(getInfo(1, 'updatedate', 'desc'));
 
     //------------------------------------------
     // click_on_sort_record_event
