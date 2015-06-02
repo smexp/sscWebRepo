@@ -62,7 +62,7 @@
         <ul>
             <li><a href="#tabs-1">Вакансии</a></li>
             <li><a href="#tabs-2">Параметры процессов</a></li>
-            <li><a href="#tabs-3">Дополнительная вкладка</a><span class="ui-icon ui-icon-close" role="presentation">Remove Tab</span></li>
+            <%--<li><a href="#tabs-3">Дополнительная вкладка</a><span class="ui-icon ui-icon-close" role="presentation">Remove Tab</span></li>--%>
         </ul>
 
         <%--tabs_body--%>
@@ -161,24 +161,28 @@
     var oldSorting = "updatedate";      //last pressed button
     var typeSorting = "desc";
     var tabs = $( "#tabs" ).tabs();
-    var tabCounter=4;
-    var addTab = function (title){
-        //иницализируем вкладку
+    var tabCounter=3;                   //number of active tabs
 
-        var     id = "tabs-" + tabCounter,
-                li = "<li><a href=\"#"+id+"\">"+title.data.titleTab+"</a><span class=\"ui-icon ui-icon-close\" role=\"presentation\">Remove Tab</span></li>",
-                tabContentHtml = "<p>HELLO</p>";
+    jQuery.fn.exists = function(){return this.length>0;}
 
-//добавление вкладки на форму
+    var addTab = function (infoTab){
+//        alert("Add tab work id="+infoTab.data.id+" title="+infoTab.data.titleTab);
+        if ($("#" + infoTab.data.id).exists() ){
+            tabs.tabs("option", "active", $("#tabs").index($("#" + infoTab.data.id)));
+        }
+        else {
+            var li = "<li><a href=\"#" + infoTab.data.id + "\">" + infoTab.data.titleTab + "</a><span class=\"ui-icon ui-icon-close\" role=\"presentation\">Remove Tab</span></li>",
+                    tabContentHtml = "<p>HELLO</p>";
 
-        $("#tabs").find("ul").append( li );
-        $( "#tabs").append( "<div id=\"" + id + "\"><div class=\"wrap\"><p></p></div></div>" );
-        $( "#"+id+" div").append(tabContentHtml+"<p>"+id+"</p>"); //сдвигает нумератор
-        //alert(tabCounter);
-        tabs.tabs( "refresh" );
-        tabs.tabs( "option", "active", tabCounter-1);
+            $("#tabs").find("ul").append(li);
+            $("#tabs").append("<div id=\"" + infoTab.data.id + "\"><div class=\"wrap\"><p></p></div></div>");
+            $("#" + infoTab.data.id + " div").append(infoTab.data.tabContentHtml); //сдвигает нумератор
+            //alert(tabCounter);
+            tabs.tabs("refresh");
+            tabs.tabs("option", "active", tabCounter - 1);
 
-        tabCounter++;
+            tabCounter++;
+        }
     };
 
     var page_table = function(page) {
@@ -275,7 +279,7 @@
 
     //-------------------------------------------
     // click_on_buttonTools
-    $("#buttonTools").on("click",{titleTab:"Настройки"},addTab);
+    $("#buttonTools").on("click",{titleTab:"Настройки", id:"sysTools", tabContentHtml:"<p>Настройки</p>"},addTab);
 
     //-------------------------------------------
 
@@ -325,7 +329,7 @@
     $("#inner_table").on("click", "#contentTable tr", function() {
                 //alert("Info about vacancy " + $(this).attr("id"));
                 var infoVacNum = $(this).attr("id");
-                $("#dialog").children().remove();
+                //$("#dialog").children().remove();
 
         $.ajax({
                     url: "https://api.hh.ru/vacancies/"+infoVacNum,
@@ -337,13 +341,17 @@
                         //alert("success");
                         var sal;
                         if (json.salary == null){sal = "не указана"} else {sal = "от "+json.salary.from+" до "+json.salary.to+" "+json.salary.currency };
-                        $("#dialog").append("<p>Вакансия "+infoVacNum+" "+json.name+"</p> <p>Компания: "+json.employer.name+" </p><p>Зарплата: "+sal+"</p>");
-                        $("#dialog").append(json.description);
-                        $( "#dialog" ).dialog({
-                            resizable: false,
-                            height:440,
-                            width: 900,
-                            modal: true});
+                        //$("#dialog").append("<p>Вакансия "+infoVacNum+" "+json.name+"</p> <p>Компания: "+json.employer.name+" </p><p>Зарплата: "+sal+"</p>");
+                        //$("#dialog").append(json.description);
+//                        $( "#dialog" ).dialog({
+//                            resizable: false,
+//                            height:440,
+//                            width: 900,
+//                            modal: true});
+
+                        var htmlContent = "<p>Вакансия "+infoVacNum+" "+json.name+"</p> <p>Компания: "+json.employer.name+" </p><p>Зарплата: "+sal+"</p>"+json.description;
+                        var infoTabLoc={data:{titleTab:json.name, id:"tab-"+infoVacNum, tabContentHtml:htmlContent}};
+                        addTab(infoTabLoc);
 
                 },
                 error: function() {
