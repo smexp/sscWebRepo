@@ -10,6 +10,7 @@
     <%--<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">--%>
     <script src="${pageContext.request.contextPath}/static/js/jquery-1.11.0.min.js"></script>
     <script src="${pageContext.request.contextPath}/static/js/jquery-ui-1.10.3.min.js"></script>
+    <script src="${pageContext.request.contextPath}/static/js/jquery.xdomainrequest.min.js"></script>
     <script src="${pageContext.request.contextPath}/static/js/jquery.jqpagination.js"></script>
 
 
@@ -59,10 +60,10 @@
     <div class="controlPanels" id="tabs" >
 
         <%--central_tabs--%>
-        <ul>
+        <ul id="tabHead">
             <li><a href="#tabs-1">Вакансии</a></li>
             <li><a href="#tabs-2">Параметры процессов</a></li>
-            <li><a href="#tabs-3">Дополнительная вкладка</a><span class="ui-icon ui-icon-close" role="presentation">Remove Tab</span></li>
+            <%--<li><a href="#tabs-3">Дополнительная вкладка</a><span class="ui-icon ui-icon-close" role="presentation">Remove Tab</span></li>--%>
         </ul>
 
         <%--tabs_body--%>
@@ -161,7 +162,29 @@
     var oldSorting = "updatedate";      //last pressed button
     var typeSorting = "desc";
     var tabs = $( "#tabs" ).tabs();
-    var tabCounter=4;
+    var tabCounter=3;                   //number of active tabs
+
+    jQuery.fn.exists = function(){return this.length>0;}
+
+    var addTab = function (infoTab){
+//        alert("Add tab work id="+infoTab.data.id+" title="+infoTab.data.titleTab);
+        if ($("#" + infoTab.data.id).exists() ){
+            tabs.tabs("option", "active", $("#tabs").index($("#" + infoTab.data.id)));
+        }
+        else {
+            var li = "<li><a href=\"#" + infoTab.data.id + "\">" + infoTab.data.titleTab + "</a><span class=\"ui-icon ui-icon-close\" role=\"presentation\">Remove Tab</span></li>";
+//                    tabContentHtml = "<p>HELLO</p>";
+
+            $("#tabs").find("ul#tabHead").append(li);
+            $("#tabs").append("<div id=\"" + infoTab.data.id + "\" class=\"innerInfoTab\"><div class=\"wrap\"></div></div>");
+            $("#" + infoTab.data.id + " div").append(infoTab.data.tabContentHtml); //сдвигает нумератор
+            //alert(tabCounter);
+            tabs.tabs("refresh");
+            tabs.tabs("option", "active", tabCounter - 1);
+
+            tabCounter++;
+        }
+    };
 
     var page_table = function(page) {
         getInfo(page, sorting, typeSorting);
@@ -194,9 +217,9 @@
     // close icon: removing the tab on click
     tabs.delegate( "span.ui-icon-close", "click", function() {
         var panelId = $( this ).closest( "li" ).remove().attr( "aria-controls" );
-//        $( "#" + panelId ).remove();
+        $( "#" + panelId ).remove();
         tabs.tabs( "refresh" );
-        tabCounter--;    
+        tabCounter--;
     });
 
 
@@ -257,24 +280,7 @@
 
     //-------------------------------------------
     // click_on_buttonTools
-    $("#buttonTools").click(function addTab(){
-        //иницализируем вкладку
-
-        var     id = "tabs-" + tabCounter,
-                li = "<li><a href=\"#"+id+"\">"+id+"</a><span class=\"ui-icon ui-icon-close\" role=\"presentation\">Remove Tab</span></li>",
-                tabContentHtml = "<p>HELLO</p>";
-
-//добавление вкладки на форму
-
-        $("#tabs").find("ul").append( li );
-        $( "#tabs").append( "<div id=\"" + id + "\"><div class=\"wrap\"><p></p></div></div>" );
-//         $( "#"+id).find(".wrap").append(tabContentHtml+"<p>"+id+"</p>"); //сдвигает нумератор
-        //alert(tabCounter);
-        tabs.tabs( "refresh" );
-        tabs.tabs( "option", "active", tabCounter-1 );
-
-        tabCounter++;
-    })
+    $("#buttonTools").on("click",{titleTab:"Настройки", id:"sysTools", tabContentHtml:"<p>Настройки</p>"},addTab);
 
     //-------------------------------------------
 
@@ -324,11 +330,12 @@
     $("#inner_table").on("click", "#contentTable tr", function() {
                 //alert("Info about vacancy " + $(this).attr("id"));
                 var infoVacNum = $(this).attr("id");
-                $("#dialog").children().remove();
+                //$("#dialog").children().remove();
 
         $.ajax({
                     url: "https://api.hh.ru/vacancies/"+infoVacNum,
                     type: "GET",
+                    crossDomain: true,
                     cache: false,
                     data: {},
                     dataType: "json",
@@ -336,17 +343,21 @@
                         //alert("success");
                         var sal;
                         if (json.salary == null){sal = "не указана"} else {sal = "от "+json.salary.from+" до "+json.salary.to+" "+json.salary.currency };
-                        $("#dialog").append("<p>Вакансия "+infoVacNum+" "+json.name+"</p> <p>Компания: "+json.employer.name+" </p><p>Зарплата: "+sal+"</p>");
-                        $("#dialog").append(json.description);
-                        $( "#dialog" ).dialog({
-                            resizable: false,
-                            height:440,
-                            width: 900,
-                            modal: true});
+                        //$("#dialog").append("<p>Вакансия "+infoVacNum+" "+json.name+"</p> <p>Компания: "+json.employer.name+" </p><p>Зарплата: "+sal+"</p>");
+                        //$("#dialog").append(json.description);
+//                        $( "#dialog" ).dialog({
+//                            resizable: false,
+//                            height:440,
+//                            width: 900,
+//                            modal: true});
+
+                        var htmlContent = "<p>Вакансия "+infoVacNum+" "+json.name+"</p> <p>Компания: "+json.employer.name+" </p><p>Зарплата: "+sal+"</p>"+json.description;
+                        var infoTabLoc={data:{titleTab:json.name.substr(0,11), id:"tab-"+infoVacNum, tabContentHtml:htmlContent}};
+                        addTab(infoTabLoc);
 
                 },
                 error: function() {
-            alert("Error");
+            alert("Browser IE don't support cross domain ajax request. Please use Chrome or Firefox browser.");
         }
 
     });

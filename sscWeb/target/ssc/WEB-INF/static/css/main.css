@@ -153,3 +153,10 @@ table.head tr td {
     font-size: 1.0em;
     width: 60%;
 }
+
+.innerInfoTab {
+    overflow-y: auto;
+    margin: 9px;
+    height: 95%;
+    width: 100%;
+}
