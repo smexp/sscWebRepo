@@ -17,7 +17,7 @@ http://www.springframework.org/schema/security/spring-security-3.1.xsd">
 			authentication-failure-url="/login.jsp?error=true" />
                         <logout logout-url="/logout" logout-success-url="/"/>
 		
-                        <anonymous username="guest" granted-authority="ROLE_ANONYMOUS" />
+                        <anonymous username="guest2" granted-authority="ROLE_ANONYMOUS" />
                         <!--<remember-me />-->
         </http>
         
@@ -58,6 +58,7 @@ http://www.springframework.org/schema/security/spring-security-3.1.xsd">
                 <authentication-provider>
                  <user-service id="userService">
     <user name="habuma" password="123" authorities="ROLE_SPECIALIST,ROLE_ADMIN"/>
+                     <user name="guest" password="pass" authorities="ROLE_SPECIALIST,ROLE_ADMIN"/>
                 </user-service>
             </authentication-provider>
         </authentication-manager>

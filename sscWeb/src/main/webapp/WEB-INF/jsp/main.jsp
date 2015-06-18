@@ -10,6 +10,7 @@
     <%--<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">--%>
     <script src="${pageContext.request.contextPath}/static/js/jquery-1.11.0.min.js"></script>
     <script src="${pageContext.request.contextPath}/static/js/jquery-ui-1.10.3.min.js"></script>
+    <script src="${pageContext.request.contextPath}/static/js/jquery.xdomainrequest.min.js"></script>
     <script src="${pageContext.request.contextPath}/static/js/jquery.jqpagination.js"></script>
 
 
@@ -59,7 +60,7 @@
     <div class="controlPanels" id="tabs" >
 
         <%--central_tabs--%>
-        <ul>
+        <ul id="tabHead">
             <li><a href="#tabs-1">Вакансии</a></li>
             <li><a href="#tabs-2">Параметры процессов</a></li>
             <%--<li><a href="#tabs-3">Дополнительная вкладка</a><span class="ui-icon ui-icon-close" role="presentation">Remove Tab</span></li>--%>
@@ -122,7 +123,7 @@
                 <table class="scann_info_header">
                     <tr>
                         <td>Сканнеры текущего пользователя:</td>
-                        <td><a id="newThread" class="flatbtn-gray" href="${pageContext.request.contextPath}/logout">Запустить новый процесс</a></td>
+                        <td></td>
                     </tr>
                 </table>
 
@@ -167,21 +168,41 @@
 
     var addTab = function (infoTab){
 //        alert("Add tab work id="+infoTab.data.id+" title="+infoTab.data.titleTab);
+        //alert("tabCounter="+tabCounter);
         if ($("#" + infoTab.data.id).exists() ){
-            tabs.tabs("option", "active", $("#tabs").index($("#" + infoTab.data.id)));
+            //alert("active =" + $("#tabs #" + infoTab.data.id).index());
+            tabs.tabs("option", "active", $("#tabs #" + infoTab.data.id).index()-1);
         }
         else {
-            var li = "<li><a href=\"#" + infoTab.data.id + "\">" + infoTab.data.titleTab + "</a><span class=\"ui-icon ui-icon-close\" role=\"presentation\">Remove Tab</span></li>",
-                    tabContentHtml = "<p>HELLO</p>";
+            if (tabCounter<=7) {
+                var li = "<li><a href=\"#" + infoTab.data.id + "\">" + infoTab.data.titleTab + "</a><span class=\"ui-icon ui-icon-close\" role=\"presentation\">Remove Tab</span></li>";
+//                    tabContentHtml = "<p>HELLO</p>";
 
-            $("#tabs").find("ul").append(li);
-            $("#tabs").append("<div id=\"" + infoTab.data.id + "\"><div class=\"wrap\"><p></p></div></div>");
-            $("#" + infoTab.data.id + " div").append(infoTab.data.tabContentHtml); //сдвигает нумератор
-            //alert(tabCounter);
-            tabs.tabs("refresh");
-            tabs.tabs("option", "active", tabCounter - 1);
+                $("#tabs").find("ul#tabHead").append(li);
+                $("#tabs").append("<div id=\"" + infoTab.data.id + "\" class=\"innerInfoTab\"><div class=\"wrap\"></div></div>");
+                $("#" + infoTab.data.id + " div").append(infoTab.data.tabContentHtml); //сдвигает нумератор
+                //alert(tabCounter);
+                tabs.tabs("refresh");
+                tabs.tabs("option", "active", tabCounter - 1);
 
-            tabCounter++;
+                tabCounter++;
+            }
+            else
+            {
+                $("#dialog").children().remove();
+                $("#dialog").append("<p>Количество открытых вкладок не должно превышать 7 шт. Требуется закрыть неиспользуемые вкладки</p>");
+                        $( "#dialog" ).dialog({
+                            resizable: false,
+                            height:200,
+                            width: 500,
+                            modal: true,
+                            buttons: {
+                                Ok: function () {
+                                    $(this).dialog("close");
+                                }
+                            }
+                        });
+            }
         }
     };
 
@@ -254,7 +275,19 @@
             dataType: "json",
             success: function(json) {
                 if (json.message == "None") {
-                    alert("Ни одного сканера не запущено");
+                    $("#dialog").children().remove();
+                    $("#dialog").append("<p>Для текущего пользователя не запущенно ни одного активного сканера</p>");
+                    $( "#dialog" ).dialog({
+                        resizable: false,
+                        height:200,
+                        width: 500,
+                        modal: true,
+                        buttons: {
+                            Ok: function () {
+                                $(this).dialog("close");
+                            }
+                        }
+                    });
                 }
                 if (json.message == "Success") {
                     $("#scannersInfo").empty();
@@ -279,7 +312,7 @@
 
     //-------------------------------------------
     // click_on_buttonTools
-    $("#buttonTools").on("click",{titleTab:"Настройки", id:"sysTools", tabContentHtml:"<p>Настройки</p>"},addTab);
+    $("#buttonTools").on("click",{titleTab:"Настройки", id:"sysTools", tabContentHtml:"<p>Раздел находится в разработке</p>"},addTab);
 
     //-------------------------------------------
 
@@ -334,6 +367,7 @@
         $.ajax({
                     url: "https://api.hh.ru/vacancies/"+infoVacNum,
                     type: "GET",
+                    crossDomain: true,
                     cache: false,
                     data: {},
                     dataType: "json",
@@ -350,12 +384,12 @@
 //                            modal: true});
 
                         var htmlContent = "<p>Вакансия "+infoVacNum+" "+json.name+"</p> <p>Компания: "+json.employer.name+" </p><p>Зарплата: "+sal+"</p>"+json.description;
-                        var infoTabLoc={data:{titleTab:json.name, id:"tab-"+infoVacNum, tabContentHtml:htmlContent}};
+                        var infoTabLoc={data:{titleTab:json.name.substr(0,11), id:"tab-"+infoVacNum, tabContentHtml:htmlContent}};
                         addTab(infoTabLoc);
 
                 },
                 error: function() {
-            alert("Error");
+            alert("Browser IE don't support cross domain ajax request. Please use Chrome or Firefox browser.");
         }
 
     });
