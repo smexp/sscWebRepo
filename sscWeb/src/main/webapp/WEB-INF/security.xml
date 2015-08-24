@@ -8,8 +8,6 @@ http://www.springframework.org/schema/security/spring-security-3.1.xsd">
         <http auto-config='true' access-denied-page="/error403.jsp" use-expressions="true">
 		<intercept-url pattern="/boot**" access="hasRole('ROLE_SPECIALIST')" />
                 <intercept-url pattern="/paths**" access="hasRole('ROLE_SPECIALIST')" />
-                <intercept-url pattern="/trainTypes**" access="hasRole('ROLE_SPECIALIST')" />
-                <intercept-url pattern="/trains**" access="hasRole('ROLE_SPECIALIST')" />
                 <intercept-url pattern="/vacancy**" access="hasRole('ROLE_SPECIALIST')" />
                 <intercept-url pattern="/main**" access="hasRole('ROLE_SPECIALIST')" />
                 

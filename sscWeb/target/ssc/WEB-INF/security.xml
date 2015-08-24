@@ -8,8 +8,6 @@ http://www.springframework.org/schema/security/spring-security-3.1.xsd">
         <http auto-config='true' access-denied-page="/error403.jsp" use-expressions="true">
 		<intercept-url pattern="/boot**" access="hasRole('ROLE_SPECIALIST')" />
                 <intercept-url pattern="/paths**" access="hasRole('ROLE_SPECIALIST')" />
-                <intercept-url pattern="/trainTypes**" access="hasRole('ROLE_SPECIALIST')" />
-                <intercept-url pattern="/trains**" access="hasRole('ROLE_SPECIALIST')" />
                 <intercept-url pattern="/vacancy**" access="hasRole('ROLE_SPECIALIST')" />
                 <intercept-url pattern="/main**" access="hasRole('ROLE_SPECIALIST')" />
                 
@@ -17,7 +15,7 @@ http://www.springframework.org/schema/security/spring-security-3.1.xsd">
 			authentication-failure-url="/login.jsp?error=true" />
                         <logout logout-url="/logout" logout-success-url="/"/>
 		
-                        <anonymous username="guest" granted-authority="ROLE_ANONYMOUS" />
+                        <anonymous username="guest2" granted-authority="ROLE_ANONYMOUS" />
                         <!--<remember-me />-->
         </http>
         
@@ -58,6 +56,7 @@ http://www.springframework.org/schema/security/spring-security-3.1.xsd">
                 <authentication-provider>
                  <user-service id="userService">
     <user name="habuma" password="123" authorities="ROLE_SPECIALIST,ROLE_ADMIN"/>
+                     <user name="guest" password="pass" authorities="ROLE_SPECIALIST,ROLE_ADMIN"/>
                 </user-service>
             </authentication-provider>
         </authentication-manager>

@@ -1,30 +1,144 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="sscWeb:war" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="29d4a7d5-5d02-4050-b2ed-f2502bcaf08e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ysmal/ssc/service/HHScanner.class" afterPath="$PROJECT_DIR$/target/classes/com/ysmal/ssc/service/HHScanner.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ssc/WEB-INF/classes/com/ysmal/ssc/service/HHScanner.class" afterPath="$PROJECT_DIR$/target/ssc/WEB-INF/classes/com/ysmal/ssc/service/HHScanner.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ysmal/ssc/server/Impl/ScanHH.class" afterPath="$PROJECT_DIR$/target/classes/com/ysmal/ssc/server/Impl/ScanHH.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ssc/WEB-INF/classes/com/ysmal/ssc/server/Impl/ScanHH.class" afterPath="$PROJECT_DIR$/target/ssc/WEB-INF/classes/com/ysmal/ssc/server/Impl/ScanHH.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ysmal/ssc/server/ScannerThread.class" afterPath="$PROJECT_DIR$/target/classes/com/ysmal/ssc/server/ScannerThread.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ssc/WEB-INF/classes/com/ysmal/ssc/server/ScannerThread.class" afterPath="$PROJECT_DIR$/target/ssc/WEB-INF/classes/com/ysmal/ssc/server/ScannerThread.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ysmal/ssc/server/Impl/SourceHHapi.class" afterPath="$PROJECT_DIR$/target/classes/com/ysmal/ssc/server/Impl/SourceHHapi.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ssc/WEB-INF/classes/com/ysmal/ssc/server/Impl/SourceHHapi.class" afterPath="$PROJECT_DIR$/target/ssc/WEB-INF/classes/com/ysmal/ssc/server/Impl/SourceHHapi.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ysmal/ssc/server/Impl/StorageDB.class" afterPath="$PROJECT_DIR$/target/classes/com/ysmal/ssc/server/Impl/StorageDB.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ssc/WEB-INF/classes/com/ysmal/ssc/server/Impl/StorageDB.class" afterPath="$PROJECT_DIR$/target/ssc/WEB-INF/classes/com/ysmal/ssc/server/Impl/StorageDB.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ysmal/ssc/server/Impl/StorageSOUT.class" afterPath="$PROJECT_DIR$/target/classes/com/ysmal/ssc/server/Impl/StorageSOUT.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ssc/WEB-INF/classes/com/ysmal/ssc/server/Impl/StorageSOUT.class" afterPath="$PROJECT_DIR$/target/ssc/WEB-INF/classes/com/ysmal/ssc/server/Impl/StorageSOUT.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ysmal/ssc/server/ThreadManager.class" afterPath="$PROJECT_DIR$/target/classes/com/ysmal/ssc/server/ThreadManager.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ssc/WEB-INF/classes/com/ysmal/ssc/server/ThreadManager.class" afterPath="$PROJECT_DIR$/target/ssc/WEB-INF/classes/com/ysmal/ssc/server/ThreadManager.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ysmal/ssc/service/UserDetailsServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/ysmal/ssc/service/UserDetailsServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ssc/WEB-INF/classes/com/ysmal/ssc/service/UserDetailsServiceImpl.class" afterPath="$PROJECT_DIR$/target/ssc/WEB-INF/classes/com/ysmal/ssc/service/UserDetailsServiceImpl.class" />
+    <list default="true" id="29d4a7d5-5d02-4050-b2ed-f2502bcaf08e" name="Default" comment="Cleaned Code">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/ysmal/ssc/controller/MainController.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/ssc/WEB-INF/classes/com/ysmal/ssc/controller/MainController.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/ssc/WEB-INF/static/css/images/animated-overlay.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/ssc/WEB-INF/static/css/images/ui-bg_diagonals-thick_18_b81900_40x40.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/ssc/WEB-INF/static/css/images/ui-bg_diagonals-thick_20_666666_40x40.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/ssc/WEB-INF/static/css/images/ui-bg_flat_10_000000_40x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/ssc/WEB-INF/static/css/images/ui-bg_glass_100_f6f6f6_1x400.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/ssc/WEB-INF/static/css/images/ui-bg_glass_100_fdf5ce_1x400.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/ssc/WEB-INF/static/css/images/ui-bg_glass_65_ffffff_1x400.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/ssc/WEB-INF/static/css/images/ui-bg_gloss-wave_35_f6a828_500x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/ssc/WEB-INF/static/css/images/ui-bg_highlight-soft_100_eeeeee_1x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/ssc/WEB-INF/static/css/images/ui-bg_highlight-soft_75_ffe45c_1x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/ssc/WEB-INF/static/css/images/ui-icons_222222_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/ssc/WEB-INF/static/css/images/ui-icons_228ef1_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/ssc/WEB-INF/static/css/images/ui-icons_454545_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/ssc/WEB-INF/static/css/images/ui-icons_ef8c08_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/ssc/WEB-INF/static/css/images/ui-icons_ffd27a_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/ssc/WEB-INF/static/css/images/ui-icons_ffffff_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/ssc/WEB-INF/static/js/jquery.xdomainrequest.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
+      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\src\main\java\com\ysmal\ssc\dto\MsgBox.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\src\main\java\com\ysmal\ssc\service\old\HHScanner.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\src\main\java\com\ysmal\ssc\service\old\ManagerScanner.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\src\main\java\com\ysmal\ssc\util\exception\EarlyDepartureException.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\src\main\java\com\ysmal\ssc\util\exception\IncorrectPassengerException.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\src\main\java\com\ysmal\ssc\util\exception\NoFreeSeatsException.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\src\main\java\com\ysmal\ssc\util\exception\RefreshException.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\src\main\java\com\ysmal\ssc\util\exception\RemoveException.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\src\main\java\com\ysmal\ssc\util\exception\SecondTicketException.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\src\main\java\com\ysmal\ssc\util\exception\SecondUserException.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\src\main\java\com\ysmal\ssc\util\exception\TrainHasTicketsException.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\src\main\webapp\UNUSED_login.jsp" afterPath="" />
+      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\src\main\webapp\WEB-INF\jsp\findTrains.jsp" afterPath="" />
+      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\src\main\webapp\WEB-INF\jsp\index.jsp" afterPath="" />
+      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\src\main\webapp\WEB-INF\jsp\index_1.jsp" afterPath="" />
+      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\src\main\webapp\WEB-INF\jsp\paths.jsp" afterPath="" />
+      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\src\main\webapp\WEB-INF\jsp\stations.jsp" afterPath="" />
+      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\src\main\webapp\WEB-INF\jsp\unused\Book1.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\src\main\webapp\WEB-INF\jsp\unused\index.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\src\main\webapp\WEB-INF\jsp\unused\loginOLD.jsp" afterPath="" />
+      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\src\main\webapp\WEB-INF\jsp\unused\login_bootstrap.jsp" afterPath="" />
+      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\src\main\webapp\WEB-INF\jsp\unused\registration.jsp" afterPath="" />
+      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\src\main\webapp\WEB-INF\jsp\unused\registrationSucced.jsp" afterPath="" />
+      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\src\main\webapp\WEB-INF\jsp\unused\tickets.jsp" afterPath="" />
+      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\src\main\webapp\WEB-INF\jsp\unused\trainTypes.jsp" afterPath="" />
+      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\src\main\webapp\WEB-INF\jsp\unused\trains.jsp" afterPath="" />
+      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\src\main\webapp\WEB-INF\static\css\unused\asc.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\src\main\webapp\WEB-INF\static\css\unused\bg_1.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\src\main\webapp\WEB-INF\static\css\unused\blue.zip" afterPath="" />
+      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\src\main\webapp\WEB-INF\static\css\unused\bootstrap-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\src\main\webapp\WEB-INF\static\css\unused\bootstrap-theme.css.map" afterPath="" />
+      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\src\main\webapp\WEB-INF\static\css\unused\bootstrap-theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\src\main\webapp\WEB-INF\static\css\unused\bootstrap.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\src\main\webapp\WEB-INF\static\css\unused\bootstrap.css.map" afterPath="" />
+      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\src\main\webapp\WEB-INF\static\css\unused\bootstrap.min.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\src\main\webapp\WEB-INF\static\css\unused\desc.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\src\main\webapp\WEB-INF\static\images\welcome-train.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\src\main\webapp\WEB-INF\static\js\findTrains.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\src\main\webapp\WEB-INF\static\js\paths.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\src\main\webapp\WEB-INF\static\js\stations.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\src\main\webapp\WEB-INF\static\js\tickets.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\src\main\webapp\WEB-INF\static\js\trainTypes.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\src\main\webapp\WEB-INF\static\js\trains.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\target\classes\com\ysmal\ssc\controller\StationController.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\target\classes\com\ysmal\ssc\dto\MsgBox.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\target\classes\com\ysmal\ssc\service\HHScanner.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\target\classes\com\ysmal\ssc\service\ManagerScanner.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\target\classes\com\ysmal\ssc\util\exception\EarlyDepartureException.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\target\classes\com\ysmal\ssc\util\exception\IncorrectPassengerException.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\target\classes\com\ysmal\ssc\util\exception\NoFreeSeatsException.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\target\classes\com\ysmal\ssc\util\exception\RefreshException.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\target\classes\com\ysmal\ssc\util\exception\RemoveException.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\target\classes\com\ysmal\ssc\util\exception\SecondTicketException.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\target\classes\com\ysmal\ssc\util\exception\SecondUserException.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\target\classes\com\ysmal\ssc\util\exception\TrainHasTicketsException.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\target\ssc\UNUSED_login.jsp" afterPath="" />
+      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\target\ssc\WEB-INF\classes\com\ysmal\ssc\controller\StationController.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\target\ssc\WEB-INF\classes\com\ysmal\ssc\dto\MsgBox.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\target\ssc\WEB-INF\classes\com\ysmal\ssc\service\HHScanner.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\target\ssc\WEB-INF\classes\com\ysmal\ssc\service\ManagerScanner.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\target\ssc\WEB-INF\classes\com\ysmal\ssc\util\exception\EarlyDepartureException.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\target\ssc\WEB-INF\classes\com\ysmal\ssc\util\exception\IncorrectPassengerException.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\target\ssc\WEB-INF\classes\com\ysmal\ssc\util\exception\NoFreeSeatsException.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\target\ssc\WEB-INF\classes\com\ysmal\ssc\util\exception\RefreshException.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\target\ssc\WEB-INF\classes\com\ysmal\ssc\util\exception\RemoveException.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\target\ssc\WEB-INF\classes\com\ysmal\ssc\util\exception\SecondTicketException.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\target\ssc\WEB-INF\classes\com\ysmal\ssc\util\exception\SecondUserException.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\target\ssc\WEB-INF\classes\com\ysmal\ssc\util\exception\TrainHasTicketsException.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\target\ssc\WEB-INF\jsp\findTrains.jsp" afterPath="" />
+      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\target\ssc\WEB-INF\jsp\index.jsp" afterPath="" />
+      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\target\ssc\WEB-INF\jsp\index_1.jsp" afterPath="" />
+      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\target\ssc\WEB-INF\jsp\paths.jsp" afterPath="" />
+      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\target\ssc\WEB-INF\jsp\stations.jsp" afterPath="" />
+      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\target\ssc\WEB-INF\jsp\unused\Book1.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\target\ssc\WEB-INF\jsp\unused\index.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\target\ssc\WEB-INF\jsp\unused\loginOLD.jsp" afterPath="" />
+      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\target\ssc\WEB-INF\jsp\unused\login_bootstrap.jsp" afterPath="" />
+      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\target\ssc\WEB-INF\jsp\unused\registration.jsp" afterPath="" />
+      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\target\ssc\WEB-INF\jsp\unused\registrationSucced.jsp" afterPath="" />
+      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\target\ssc\WEB-INF\jsp\unused\tickets.jsp" afterPath="" />
+      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\target\ssc\WEB-INF\jsp\unused\trainTypes.jsp" afterPath="" />
+      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\target\ssc\WEB-INF\jsp\unused\trains.jsp" afterPath="" />
+      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\target\ssc\WEB-INF\static\css\unused\asc.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\target\ssc\WEB-INF\static\css\unused\bg_1.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\target\ssc\WEB-INF\static\css\unused\blue.zip" afterPath="" />
+      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\target\ssc\WEB-INF\static\css\unused\bootstrap-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\target\ssc\WEB-INF\static\css\unused\bootstrap-theme.css.map" afterPath="" />
+      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\target\ssc\WEB-INF\static\css\unused\bootstrap-theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\target\ssc\WEB-INF\static\css\unused\bootstrap.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\target\ssc\WEB-INF\static\css\unused\bootstrap.css.map" afterPath="" />
+      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\target\ssc\WEB-INF\static\css\unused\bootstrap.min.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\target\ssc\WEB-INF\static\css\unused\desc.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\target\ssc\WEB-INF\static\images\welcome-train.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\target\ssc\WEB-INF\static\js\findTrains.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\target\ssc\WEB-INF\static\js\paths.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\target\ssc\WEB-INF\static\js\stations.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\target\ssc\WEB-INF\static\js\tickets.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\target\ssc\WEB-INF\static\js\trainTypes.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\target\ssc\WEB-INF\static\js\trains.js" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ysmal/ssc/dao/VacancyDAOImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/ysmal/ssc/dao/VacancyDAOImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ssc/WEB-INF/classes/com/ysmal/ssc/dao/VacancyDAOImpl.class" afterPath="$PROJECT_DIR$/target/ssc/WEB-INF/classes/com/ysmal/ssc/dao/VacancyDAOImpl.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ssc.war" afterPath="$PROJECT_DIR$/target/ssc.war" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/MANIFEST.MF" afterPath="$PROJECT_DIR$/target/MANIFEST.MF" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ssc/META-INF/MANIFEST.MF" afterPath="$PROJECT_DIR$/target/ssc/META-INF/MANIFEST.MF" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/main.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/main.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ysmal/ssc/dao/VacancyDAO.java" afterPath="$PROJECT_DIR$/src/main/java/com/ysmal/ssc/dao/VacancyDAO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ysmal/ssc/dao/VacancyDAOImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/ysmal/ssc/dao/VacancyDAOImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/applicationContext.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/applicationContext.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ssc/WEB-INF/applicationContext.xml" afterPath="$PROJECT_DIR$/target/ssc/WEB-INF/applicationContext.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ssc/WEB-INF/jsp/main.jsp" afterPath="$PROJECT_DIR$/target/ssc/WEB-INF/jsp/main.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/security.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/security.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ssc/WEB-INF/security.xml" afterPath="$PROJECT_DIR$/target/ssc/WEB-INF/security.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sscWeb.iml" afterPath="$PROJECT_DIR$/sscWeb.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MOVED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\src\main\java\com\ysmal\ssc\controller\StationController.java" afterPath="$PROJECT_DIR$/src/main/java/com/ysmal/ssc/controller/MainController.java" />
     </list>
     <ignored path="sscWeb.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -38,6 +152,9 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/sscWeb$Ssc.coverage" NAME="Ssc Coverage Results" MODIFIED="1440414705693" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
@@ -52,32 +169,7 @@
     <favorites_list name="sscWeb" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="main.jsp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/main.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5">
-              <caret line="269" column="96" selection-start-line="269" selection-start-column="96" selection-end-line="269" selection-end-column="96" />
-              <folding>
-                <element signature="n#ul#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="e#6156#6208#0#HTML" expanded="false" />
-                <element signature="e#6298#7099#0#HTML" expanded="false" />
-                <element signature="e#7104#7137#0#HTML" expanded="false" />
-                <element signature="e#7244#7404#0#HTML" expanded="false" />
-                <element signature="e#7518#7942#0#HTML" expanded="false" />
-                <element signature="e#8079#9239#0#HTML" expanded="false" />
-                <element signature="e#10365#11795#0#HTML" expanded="false" />
-                <element signature="e#11943#13171#0#HTML" expanded="false" />
-                <element signature="e#13284#13379#0#HTML" expanded="false" />
-                <element signature="e#13506#13556#0#HTML" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -87,7 +179,21 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="smexp &lt;y.s.mail@mail.ru&gt;" />
+        <option value="YusH &lt;y.s.mail@mail.ru&gt;" />
+      </list>
+    </option>
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="FORCE_PUSH_ALLOWED" value="true" />
+    <option name="PUSH_TAGS">
+      <GitPushTagMode />
+    </option>
+    <push-targets>
+      <push-target-info repo="$PROJECT_DIR$/.." source="master" target-remote="origin" target-branch="CleanedCode" />
+    </push-targets>
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -103,6 +209,11 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/database-config.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/main.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ysmal/ssc/dao/VacancyDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ysmal/ssc/dao/VacancyDAOImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/security.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/applicationContext.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ysmal/ssc/controller/MainController.java" />
       </list>
     </option>
   </component>
@@ -172,7 +283,7 @@
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
+    <navigator currentView="Scope" currentSubView="Project Files" proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -184,9 +295,35 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="PackagesPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sscWeb" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sscWeb" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sscWeb" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sscWeb" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com.ysmal.ssc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -195,144 +332,22 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Production">
           <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sscWeb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sscWeb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
+        </subPane>
+        <subPane subId="Project Files">
           <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sscWeb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sscWeb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sscWeb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sscWeb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sscWeb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sscWeb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sscWeb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sscWeb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sscWeb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sscWeb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -343,7 +358,7 @@
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../GitHub/SSCProject" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../Traccart/traccar-master" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="recentsLimit" value="5" />
     <property name="restartRequiresConfirmation" value="true" />
@@ -352,21 +367,21 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.39770114" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="145" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="177" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="192" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="224" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="103" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="135" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="769" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="800" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="97" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="129" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="104" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="136" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="112" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="144" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="896" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="927" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
   </component>
   <component name="RecentsManager">
@@ -659,7 +674,7 @@
       <deployment>
         <artifact name="sscWeb:war">
           <settings>
-            <option name="CONTEXT_PATH" value="/ssc" />
+            <option name="CONTEXT_PATH" value="/" />
           </settings>
         </artifact>
       </deployment>
@@ -750,11 +765,16 @@
       <workItem from="1431518245555" duration="2995000" />
       <workItem from="1431940900145" duration="6948000" />
       <workItem from="1432761108621" duration="1079000" />
+      <workItem from="1432762879237" duration="658000" />
+      <workItem from="1438026436622" duration="748000" />
+      <workItem from="1440407882323" duration="5369000" />
+      <workItem from="1440413300034" duration="2834000" />
+      <workItem from="1440416589756" duration="187000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34775000" />
+    <option name="totallyTimeSpent" value="44571000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -771,30 +791,32 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3276923" sideWeight="0.49717513" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32704404" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3276923" sideWeight="0.49717513" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3476923" sideWeight="0.5157385" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3276923" sideWeight="0.49717513" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3292978" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32704404" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.44968554" sideWeight="0.4842615" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3276923" sideWeight="0.49717513" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25036603" sideWeight="0.4805492" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25100887" sideWeight="0.5194508" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3292978" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32704404" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3276923" sideWeight="0.49717513" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.8773585" sideWeight="0.5183016" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3276923" sideWeight="0.49717513" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3292978" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5880503" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3773585" sideWeight="0.4816984" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3276923" sideWeight="0.49717513" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21742313" sideWeight="0.4805492" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25100887" sideWeight="0.5194508" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3292978" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24939467" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25100887" sideWeight="0.50800914" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25100887" sideWeight="0.50800914" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32861635" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -809,11 +831,13 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="LAST_COMMIT_MESSAGE" value="" />
+    <MESSAGE value="Cleaned Code" />
+    <option name="LAST_COMMIT_MESSAGE" value="Cleaned Code" />
+    <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.73396677" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="11" />
+      <option name="time" value="13" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -826,215 +850,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#ul#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="e#6156#6208#0#HTML" expanded="false" />
-            <element signature="e#6298#7099#0#HTML" expanded="false" />
-            <element signature="e#7104#7137#0#HTML" expanded="false" />
-            <element signature="e#7244#7404#0#HTML" expanded="false" />
-            <element signature="e#7518#7942#0#HTML" expanded="false" />
-            <element signature="e#8079#9239#0#HTML" expanded="false" />
-            <element signature="e#10365#11795#0#HTML" expanded="false" />
-            <element signature="e#11943#13171#0#HTML" expanded="false" />
-            <element signature="e#13284#13379#0#HTML" expanded="false" />
-            <element signature="e#13506#13556#0#HTML" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/main.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#ul#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="e#6156#6208#0#HTML" expanded="false" />
-            <element signature="e#6298#7099#0#HTML" expanded="false" />
-            <element signature="e#7104#7137#0#HTML" expanded="false" />
-            <element signature="e#7244#7404#0#HTML" expanded="false" />
-            <element signature="e#7518#7942#0#HTML" expanded="false" />
-            <element signature="e#8079#9239#0#HTML" expanded="false" />
-            <element signature="e#10365#11795#0#HTML" expanded="false" />
-            <element signature="e#11943#13171#0#HTML" expanded="false" />
-            <element signature="e#13284#13379#0#HTML" expanded="false" />
-            <element signature="e#13506#13556#0#HTML" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/main.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#ul#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="e#6156#6208#0#HTML" expanded="false" />
-            <element signature="e#6298#7099#0#HTML" expanded="false" />
-            <element signature="e#7104#7137#0#HTML" expanded="false" />
-            <element signature="e#7244#7404#0#HTML" expanded="false" />
-            <element signature="e#7518#7942#0#HTML" expanded="false" />
-            <element signature="e#8079#9239#0#HTML" expanded="false" />
-            <element signature="e#10365#11795#0#HTML" expanded="false" />
-            <element signature="e#11943#13171#0#HTML" expanded="false" />
-            <element signature="e#13284#13379#0#HTML" expanded="false" />
-            <element signature="e#13506#13556#0#HTML" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/main.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#ul#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="e#6156#6208#0#HTML" expanded="false" />
-            <element signature="e#6298#7099#0#HTML" expanded="false" />
-            <element signature="e#7104#7137#0#HTML" expanded="false" />
-            <element signature="e#7244#7404#0#HTML" expanded="false" />
-            <element signature="e#7518#7942#0#HTML" expanded="false" />
-            <element signature="e#8079#9239#0#HTML" expanded="false" />
-            <element signature="e#10365#11795#0#HTML" expanded="false" />
-            <element signature="e#11943#13171#0#HTML" expanded="false" />
-            <element signature="e#13284#13379#0#HTML" expanded="false" />
-            <element signature="e#13506#13556#0#HTML" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/database-config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/database-config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="72" selection-start-line="9" selection-start-column="72" selection-end-line="9" selection-end-column="72" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/main.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#ul#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="e#6156#6208#0#HTML" expanded="false" />
-            <element signature="e#6298#7099#0#HTML" expanded="false" />
-            <element signature="e#7104#7137#0#HTML" expanded="false" />
-            <element signature="e#7244#7404#0#HTML" expanded="false" />
-            <element signature="e#7518#7942#0#HTML" expanded="false" />
-            <element signature="e#8079#9239#0#HTML" expanded="false" />
-            <element signature="e#10365#11795#0#HTML" expanded="false" />
-            <element signature="e#11943#13171#0#HTML" expanded="false" />
-            <element signature="e#13284#13379#0#HTML" expanded="false" />
-            <element signature="e#13506#13556#0#HTML" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/database-config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="72" selection-start-line="9" selection-start-column="72" selection-end-line="9" selection-end-column="72" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/main.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#ul#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="e#6156#6208#0#HTML" expanded="false" />
-            <element signature="e#6298#7099#0#HTML" expanded="false" />
-            <element signature="e#7104#7137#0#HTML" expanded="false" />
-            <element signature="e#7244#7404#0#HTML" expanded="false" />
-            <element signature="e#7518#7942#0#HTML" expanded="false" />
-            <element signature="e#8079#9239#0#HTML" expanded="false" />
-            <element signature="e#10365#11795#0#HTML" expanded="false" />
-            <element signature="e#11943#13171#0#HTML" expanded="false" />
-            <element signature="e#13284#13379#0#HTML" expanded="false" />
-            <element signature="e#13506#13556#0#HTML" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/database-config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="72" selection-start-line="9" selection-start-column="72" selection-end-line="9" selection-end-column="72" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/main.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#ul#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="e#6156#6208#0#HTML" expanded="false" />
-            <element signature="e#6298#7099#0#HTML" expanded="false" />
-            <element signature="e#7104#7137#0#HTML" expanded="false" />
-            <element signature="e#7244#7404#0#HTML" expanded="false" />
-            <element signature="e#7518#7942#0#HTML" expanded="false" />
-            <element signature="e#8079#9239#0#HTML" expanded="false" />
-            <element signature="e#10365#11795#0#HTML" expanded="false" />
-            <element signature="e#11943#13171#0#HTML" expanded="false" />
-            <element signature="e#13284#13379#0#HTML" expanded="false" />
-            <element signature="e#13506#13556#0#HTML" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/database-config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="72" selection-start-line="9" selection-start-column="72" selection-end-line="9" selection-end-column="72" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/main.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#ul#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="e#6156#6208#0#HTML" expanded="false" />
-            <element signature="e#6298#7099#0#HTML" expanded="false" />
-            <element signature="e#7104#7137#0#HTML" expanded="false" />
-            <element signature="e#7244#7404#0#HTML" expanded="false" />
-            <element signature="e#7518#7942#0#HTML" expanded="false" />
-            <element signature="e#8079#9239#0#HTML" expanded="false" />
-            <element signature="e#10365#11795#0#HTML" expanded="false" />
-            <element signature="e#11943#13171#0#HTML" expanded="false" />
-            <element signature="e#13284#13379#0#HTML" expanded="false" />
-            <element signature="e#13506#13556#0#HTML" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1059,13 +874,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ysmal/ssc/server/ThreadManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.18438178">
-          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/static/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.20731707">
@@ -1087,21 +895,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34228188">
-          <caret line="12" column="62" selection-start-line="12" selection-start-column="62" selection-end-line="12" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/database-config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.25671142">
-          <caret line="9" column="72" selection-start-line="9" selection-start-column="72" selection-end-line="9" selection-end-column="72" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/static/css/images/animated-overlay.gif">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -1119,25 +912,302 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ysmal/ssc/util/exception/CreateException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.10559006">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ysmal/ssc/util/exception/DataStoreException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ysmal/ssc/util/exception/FindException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.10559006">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ysmal/ssc/util/exception/UpdateException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.21118012">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/parts/footer.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/parts/header.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/parts/includes.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/error403.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.5844595">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/dataTable.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/security.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5151515">
+          <caret line="9" column="88" selection-start-line="9" selection-start-column="88" selection-end-line="9" selection-end-column="88" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.8020477">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/main.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5">
-          <caret line="269" column="96" selection-start-line="269" selection-start-column="96" selection-end-line="269" selection-end-column="96" />
+        <state vertical-scroll-proportion="-198.76923">
+          <caret line="304" column="45" selection-start-line="304" selection-start-column="45" selection-end-line="304" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/database-config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ysmal/ssc/dao/VacancyDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.14868805">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ysmal/ssc/model/ChangedAtribute.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.28862974">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ysmal/ssc/dao/UserDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33527696">
+          <caret line="22" column="42" selection-start-line="22" selection-start-column="42" selection-end-line="22" selection-end-column="42" />
           <folding>
-            <element signature="n#ul#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="e#6156#6208#0#HTML" expanded="false" />
-            <element signature="e#6298#7099#0#HTML" expanded="false" />
-            <element signature="e#7104#7137#0#HTML" expanded="false" />
-            <element signature="e#7244#7404#0#HTML" expanded="false" />
-            <element signature="e#7518#7942#0#HTML" expanded="false" />
-            <element signature="e#8079#9239#0#HTML" expanded="false" />
-            <element signature="e#10365#11795#0#HTML" expanded="false" />
-            <element signature="e#11943#13171#0#HTML" expanded="false" />
-            <element signature="e#13284#13379#0#HTML" expanded="false" />
-            <element signature="e#13506#13556#0#HTML" expanded="false" />
+            <element signature="imports" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ysmal/ssc/model/Role.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2973761">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ysmal/ssc/model/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2973761">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ysmal/ssc/model/Vacancy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2973761">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ysmal/ssc/server/Abstract/AbstractScannerThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.3702624">
+          <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ysmal/ssc/server/Abstract/AbstractSource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2973761">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ysmal/ssc/server/Abstract/AbstractStorage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2973761">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ysmal/ssc/server/Impl/StorageDB.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.329446">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ysmal/ssc/server/Impl/StorageSOUT.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.040816326">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ysmal/ssc/server/HibernateUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.39650145">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ysmal/ssc/server/ScannerThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.18950437">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ysmal/ssc/server/ThreadManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.941691">
+          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ysmal/ssc/service/VacancyService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.44606414">
+          <caret line="22" column="38" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ysmal/ssc/service/ManagerService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.44606414">
+          <caret line="11" column="38" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ysmal/ssc/service/AbstractScannerThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.48688048">
+          <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ysmal/ssc/server/Impl/ScanHH.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3469388">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/hhParsing.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/META-INF/context.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.04956268">
+          <caret line="1" column="9" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/3.1.3.RELEASE/spring-beans-3.1.3.RELEASE.jar!/org/springframework/beans/factory/annotation/AutowiredAnnotationBeanPostProcessor.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.35849056">
+          <caret line="351" column="0" selection-start-line="351" selection-start-column="0" selection-end-line="351" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/dispatcher-servlet.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.37907377">
+          <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ysmal/ssc/server/Impl/SourceHHapi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ysmal/ssc/controller/MainController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.36956522">
+          <caret line="35" column="14" selection-start-line="35" selection-start-column="14" selection-end-line="35" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/applicationContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ysmal/ssc/dao/VacancyDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.49">
+          <caret line="42" column="110" selection-start-line="42" selection-start-column="110" selection-end-line="42" selection-end-column="110" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1195,11 +1265,11 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>sscWeb</last-edited>
+          <last-edited>Spring|sscWeb</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.39770114" />
+                <option value="0.15163529" />
               </list>
             </option>
           </splitter-proportions>

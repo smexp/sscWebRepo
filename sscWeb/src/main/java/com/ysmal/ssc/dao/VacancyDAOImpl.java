@@ -1,7 +1,3 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 
 package com.ysmal.ssc.dao;
 
@@ -24,8 +20,6 @@ public class VacancyDAOImpl implements VacancyDAO {
     
     @Autowired
     private SessionFactory sessionFactory;
-    
-    
 
     @Override
 
