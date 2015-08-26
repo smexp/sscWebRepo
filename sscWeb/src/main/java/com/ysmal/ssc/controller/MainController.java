@@ -47,12 +47,21 @@ public class MainController {
     }
 
     @RequestMapping(method = RequestMethod.GET, value = "main")
-    public String mainForm(Model model) {
+         public String mainForm(Model model) {
         model.addAttribute("vacancyList", vacancyService.getVacancyRecord("true", 1, 10, "updatedate", "desc"));
         model.addAttribute("maxPage", vacancyService.getMaxPage().intValue());
         return "main";
     }
-    
+
+    @RequestMapping(method = RequestMethod.POST, value = "filter")
+    public @ResponseBody String setFilter(
+            @RequestParam(value = "userName") String userName,
+            @RequestParam(value = "companyName") String companyName
+    ) {
+//        return vacancyService.addThread(name, userName);
+        return "main";
+    }
+
     @RequestMapping(method = RequestMethod.GET, value="addThread")
 	public @ResponseBody String addThread(
             @RequestParam(value = "name") String name,

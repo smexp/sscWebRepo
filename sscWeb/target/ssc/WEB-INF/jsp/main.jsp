@@ -53,6 +53,7 @@
             <li><a class="flatbtn-blu menuButton" id="buttonTools" href="#">Настройки</a></li>
             <li><a class="flatbtn-blu menuButton" id="buttonAbout">Новый сканнер</a></li>
             <li><a class="flatbtn-blu menuButton" id="buttonState">Состояние</a></li>
+            <li><a class="flatbtn-blu menuButton" id="buttonFilter">Фильтр</a></li>
         </ul>
     </div>
 
@@ -151,9 +152,7 @@
 </div>
 
 <%--hidding_dialog_about_vacantion--%>
-<div id="dialog" title="Информация о вакансии">
-    <p> </p>
-</div>
+<%@include file = "dialogForms.jsp" %>
 
 <%--java_scripts--%>
 <script>
@@ -162,26 +161,26 @@
     var oldSorting = "updatedate";      //last pressed button
     var typeSorting = "desc";
     var tabs = $( "#tabs" ).tabs();
-    var tabCounter=3;                   //number of active tabs
+    var tabCounter = 3;                   //number of active tabs
+    var varFilter = {};
+
 
     jQuery.fn.exists = function(){return this.length>0;}
 
     var addTab = function (infoTab){
-//        alert("Add tab work id="+infoTab.data.id+" title="+infoTab.data.titleTab);
-        //alert("tabCounter="+tabCounter);
+
         if ($("#" + infoTab.data.id).exists() ){
-            //alert("active =" + $("#tabs #" + infoTab.data.id).index());
+
             tabs.tabs("option", "active", $("#tabs #" + infoTab.data.id).index()-1);
         }
         else {
             if (tabCounter<=7) {
                 var li = "<li><a href=\"#" + infoTab.data.id + "\">" + infoTab.data.titleTab + "</a><span class=\"ui-icon ui-icon-close\" role=\"presentation\">Remove Tab</span></li>";
-//                    tabContentHtml = "<p>HELLO</p>";
 
                 $("#tabs").find("ul#tabHead").append(li);
                 $("#tabs").append("<div id=\"" + infoTab.data.id + "\" class=\"innerInfoTab\"><div class=\"wrap\"></div></div>");
                 $("#" + infoTab.data.id + " div").append(infoTab.data.tabContentHtml); //сдвигает нумератор
-                //alert(tabCounter);
+
                 tabs.tabs("refresh");
                 tabs.tabs("option", "active", tabCounter - 1);
 
@@ -225,7 +224,6 @@
                     var $row = "<tr id=\"" + json[i].id + "\"><td > " + json[i].name + "</td> <td>" + json[i].companyName + "</td> <td>" + json[i].salary + "</td> <td>" + json[i].version + "</td> <td>" + new Date(json[i].updatedate).toLocaleString() + "</td></tr>";
                     $("#contentTable").append($row);
                 }
-
             },
             error: function() {
                 alert("Error");
@@ -309,6 +307,29 @@
     }
 
     //-------------------------------------------
+    // set_filter_function
+    function setFilter(){
+        $( "#filter" ).dialog({
+            autoOpen: true,
+            resizable: false,
+            height:200,
+            width: 500,
+            modal: true,
+            buttons: [
+                {text:'Применить', click: function () {
+                    $(this).dialog("close");
+//                    varFilter[0]='FI'; alert($(this).find('#companyName').val());
+                    var companyName = $(this).find('#companyName').val();
+                    $.post('../filter', {userName : 'guest' , companyName : companyName }, function(){
+                        alert("OK POST");
+                        location.href="${pageContext.request.contextPath}/main";
+                    });
+                }},
+                {text:'Сбросить', click: function () {  }},
+                {text:'Отмена', click: function () {$(this).dialog("close");}}
+            ]
+        });
+    }
 
     //-------------------------------------------
     // click_on_buttonTools
@@ -411,6 +432,12 @@
         addThread("JavaThread", "haruba");
     });
 
+    //-----------------------------------------
+    // get_info_about_running_scanners_event
+    $("#buttonFilter").on("click", function() {
+        setFilter();
+    });
+
 
     //-----------------------------------------
     // get_info_about_running_scanners_event
@@ -422,6 +449,7 @@
 
     $(document).ready(function()
             {
+                $( "#filter" ).dialog({autoOpen: false});
                 $("#buttonDate").click(getInfo(1, 'updatedate', 'desc'));
 
             }

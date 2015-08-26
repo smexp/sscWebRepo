@@ -6,139 +6,15 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="29d4a7d5-5d02-4050-b2ed-f2502bcaf08e" name="Default" comment="Cleaned Code">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/ysmal/ssc/controller/MainController.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/ssc/WEB-INF/classes/com/ysmal/ssc/controller/MainController.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/ssc/WEB-INF/static/css/images/animated-overlay.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/ssc/WEB-INF/static/css/images/ui-bg_diagonals-thick_18_b81900_40x40.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/ssc/WEB-INF/static/css/images/ui-bg_diagonals-thick_20_666666_40x40.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/ssc/WEB-INF/static/css/images/ui-bg_flat_10_000000_40x100.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/ssc/WEB-INF/static/css/images/ui-bg_glass_100_f6f6f6_1x400.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/ssc/WEB-INF/static/css/images/ui-bg_glass_100_fdf5ce_1x400.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/ssc/WEB-INF/static/css/images/ui-bg_glass_65_ffffff_1x400.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/ssc/WEB-INF/static/css/images/ui-bg_gloss-wave_35_f6a828_500x100.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/ssc/WEB-INF/static/css/images/ui-bg_highlight-soft_100_eeeeee_1x100.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/ssc/WEB-INF/static/css/images/ui-bg_highlight-soft_75_ffe45c_1x100.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/ssc/WEB-INF/static/css/images/ui-icons_222222_256x240.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/ssc/WEB-INF/static/css/images/ui-icons_228ef1_256x240.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/ssc/WEB-INF/static/css/images/ui-icons_454545_256x240.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/ssc/WEB-INF/static/css/images/ui-icons_ef8c08_256x240.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/ssc/WEB-INF/static/css/images/ui-icons_ffd27a_256x240.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/ssc/WEB-INF/static/css/images/ui-icons_ffffff_256x240.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/ssc/WEB-INF/static/js/jquery.xdomainrequest.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\src\main\java\com\ysmal\ssc\dto\MsgBox.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\src\main\java\com\ysmal\ssc\service\old\HHScanner.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\src\main\java\com\ysmal\ssc\service\old\ManagerScanner.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\src\main\java\com\ysmal\ssc\util\exception\EarlyDepartureException.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\src\main\java\com\ysmal\ssc\util\exception\IncorrectPassengerException.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\src\main\java\com\ysmal\ssc\util\exception\NoFreeSeatsException.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\src\main\java\com\ysmal\ssc\util\exception\RefreshException.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\src\main\java\com\ysmal\ssc\util\exception\RemoveException.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\src\main\java\com\ysmal\ssc\util\exception\SecondTicketException.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\src\main\java\com\ysmal\ssc\util\exception\SecondUserException.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\src\main\java\com\ysmal\ssc\util\exception\TrainHasTicketsException.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\src\main\webapp\UNUSED_login.jsp" afterPath="" />
-      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\src\main\webapp\WEB-INF\jsp\findTrains.jsp" afterPath="" />
-      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\src\main\webapp\WEB-INF\jsp\index.jsp" afterPath="" />
-      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\src\main\webapp\WEB-INF\jsp\index_1.jsp" afterPath="" />
-      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\src\main\webapp\WEB-INF\jsp\paths.jsp" afterPath="" />
-      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\src\main\webapp\WEB-INF\jsp\stations.jsp" afterPath="" />
-      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\src\main\webapp\WEB-INF\jsp\unused\Book1.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\src\main\webapp\WEB-INF\jsp\unused\index.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\src\main\webapp\WEB-INF\jsp\unused\loginOLD.jsp" afterPath="" />
-      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\src\main\webapp\WEB-INF\jsp\unused\login_bootstrap.jsp" afterPath="" />
-      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\src\main\webapp\WEB-INF\jsp\unused\registration.jsp" afterPath="" />
-      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\src\main\webapp\WEB-INF\jsp\unused\registrationSucced.jsp" afterPath="" />
-      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\src\main\webapp\WEB-INF\jsp\unused\tickets.jsp" afterPath="" />
-      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\src\main\webapp\WEB-INF\jsp\unused\trainTypes.jsp" afterPath="" />
-      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\src\main\webapp\WEB-INF\jsp\unused\trains.jsp" afterPath="" />
-      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\src\main\webapp\WEB-INF\static\css\unused\asc.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\src\main\webapp\WEB-INF\static\css\unused\bg_1.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\src\main\webapp\WEB-INF\static\css\unused\blue.zip" afterPath="" />
-      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\src\main\webapp\WEB-INF\static\css\unused\bootstrap-theme.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\src\main\webapp\WEB-INF\static\css\unused\bootstrap-theme.css.map" afterPath="" />
-      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\src\main\webapp\WEB-INF\static\css\unused\bootstrap-theme.min.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\src\main\webapp\WEB-INF\static\css\unused\bootstrap.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\src\main\webapp\WEB-INF\static\css\unused\bootstrap.css.map" afterPath="" />
-      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\src\main\webapp\WEB-INF\static\css\unused\bootstrap.min.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\src\main\webapp\WEB-INF\static\css\unused\desc.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\src\main\webapp\WEB-INF\static\images\welcome-train.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\src\main\webapp\WEB-INF\static\js\findTrains.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\src\main\webapp\WEB-INF\static\js\paths.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\src\main\webapp\WEB-INF\static\js\stations.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\src\main\webapp\WEB-INF\static\js\tickets.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\src\main\webapp\WEB-INF\static\js\trainTypes.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\src\main\webapp\WEB-INF\static\js\trains.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\target\classes\com\ysmal\ssc\controller\StationController.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\target\classes\com\ysmal\ssc\dto\MsgBox.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\target\classes\com\ysmal\ssc\service\HHScanner.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\target\classes\com\ysmal\ssc\service\ManagerScanner.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\target\classes\com\ysmal\ssc\util\exception\EarlyDepartureException.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\target\classes\com\ysmal\ssc\util\exception\IncorrectPassengerException.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\target\classes\com\ysmal\ssc\util\exception\NoFreeSeatsException.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\target\classes\com\ysmal\ssc\util\exception\RefreshException.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\target\classes\com\ysmal\ssc\util\exception\RemoveException.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\target\classes\com\ysmal\ssc\util\exception\SecondTicketException.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\target\classes\com\ysmal\ssc\util\exception\SecondUserException.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\target\classes\com\ysmal\ssc\util\exception\TrainHasTicketsException.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\target\ssc\UNUSED_login.jsp" afterPath="" />
-      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\target\ssc\WEB-INF\classes\com\ysmal\ssc\controller\StationController.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\target\ssc\WEB-INF\classes\com\ysmal\ssc\dto\MsgBox.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\target\ssc\WEB-INF\classes\com\ysmal\ssc\service\HHScanner.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\target\ssc\WEB-INF\classes\com\ysmal\ssc\service\ManagerScanner.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\target\ssc\WEB-INF\classes\com\ysmal\ssc\util\exception\EarlyDepartureException.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\target\ssc\WEB-INF\classes\com\ysmal\ssc\util\exception\IncorrectPassengerException.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\target\ssc\WEB-INF\classes\com\ysmal\ssc\util\exception\NoFreeSeatsException.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\target\ssc\WEB-INF\classes\com\ysmal\ssc\util\exception\RefreshException.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\target\ssc\WEB-INF\classes\com\ysmal\ssc\util\exception\RemoveException.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\target\ssc\WEB-INF\classes\com\ysmal\ssc\util\exception\SecondTicketException.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\target\ssc\WEB-INF\classes\com\ysmal\ssc\util\exception\SecondUserException.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\target\ssc\WEB-INF\classes\com\ysmal\ssc\util\exception\TrainHasTicketsException.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\target\ssc\WEB-INF\jsp\findTrains.jsp" afterPath="" />
-      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\target\ssc\WEB-INF\jsp\index.jsp" afterPath="" />
-      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\target\ssc\WEB-INF\jsp\index_1.jsp" afterPath="" />
-      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\target\ssc\WEB-INF\jsp\paths.jsp" afterPath="" />
-      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\target\ssc\WEB-INF\jsp\stations.jsp" afterPath="" />
-      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\target\ssc\WEB-INF\jsp\unused\Book1.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\target\ssc\WEB-INF\jsp\unused\index.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\target\ssc\WEB-INF\jsp\unused\loginOLD.jsp" afterPath="" />
-      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\target\ssc\WEB-INF\jsp\unused\login_bootstrap.jsp" afterPath="" />
-      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\target\ssc\WEB-INF\jsp\unused\registration.jsp" afterPath="" />
-      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\target\ssc\WEB-INF\jsp\unused\registrationSucced.jsp" afterPath="" />
-      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\target\ssc\WEB-INF\jsp\unused\tickets.jsp" afterPath="" />
-      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\target\ssc\WEB-INF\jsp\unused\trainTypes.jsp" afterPath="" />
-      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\target\ssc\WEB-INF\jsp\unused\trains.jsp" afterPath="" />
-      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\target\ssc\WEB-INF\static\css\unused\asc.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\target\ssc\WEB-INF\static\css\unused\bg_1.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\target\ssc\WEB-INF\static\css\unused\blue.zip" afterPath="" />
-      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\target\ssc\WEB-INF\static\css\unused\bootstrap-theme.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\target\ssc\WEB-INF\static\css\unused\bootstrap-theme.css.map" afterPath="" />
-      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\target\ssc\WEB-INF\static\css\unused\bootstrap-theme.min.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\target\ssc\WEB-INF\static\css\unused\bootstrap.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\target\ssc\WEB-INF\static\css\unused\bootstrap.css.map" afterPath="" />
-      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\target\ssc\WEB-INF\static\css\unused\bootstrap.min.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\target\ssc\WEB-INF\static\css\unused\desc.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\target\ssc\WEB-INF\static\images\welcome-train.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\target\ssc\WEB-INF\static\js\findTrains.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\target\ssc\WEB-INF\static\js\paths.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\target\ssc\WEB-INF\static\js\stations.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\target\ssc\WEB-INF\static\js\tickets.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\target\ssc\WEB-INF\static\js\trainTypes.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\target\ssc\WEB-INF\static\js\trains.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ysmal/ssc/dao/VacancyDAOImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/ysmal/ssc/dao/VacancyDAOImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ssc/WEB-INF/classes/com/ysmal/ssc/dao/VacancyDAOImpl.class" afterPath="$PROJECT_DIR$/target/ssc/WEB-INF/classes/com/ysmal/ssc/dao/VacancyDAOImpl.class" />
+    <list default="true" id="29d4a7d5-5d02-4050-b2ed-f2502bcaf08e" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ysmal/ssc/model/UserInfo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ysmal/ssc/service/UserService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/dialogForms.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ssc.war" afterPath="$PROJECT_DIR$/target/ssc.war" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ysmal/ssc/dao/VacancyDAO.java" afterPath="$PROJECT_DIR$/src/main/java/com/ysmal/ssc/dao/VacancyDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ysmal/ssc/dao/VacancyDAOImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/ysmal/ssc/dao/VacancyDAOImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/applicationContext.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/applicationContext.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ssc/WEB-INF/applicationContext.xml" afterPath="$PROJECT_DIR$/target/ssc/WEB-INF/applicationContext.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ysmal/ssc/controller/MainController.java" afterPath="$PROJECT_DIR$/src/main/java/com/ysmal/ssc/controller/MainController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/main.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/main.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ssc/WEB-INF/jsp/main.jsp" afterPath="$PROJECT_DIR$/target/ssc/WEB-INF/jsp/main.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/security.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/security.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ssc/WEB-INF/security.xml" afterPath="$PROJECT_DIR$/target/ssc/WEB-INF/security.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sscWeb.iml" afterPath="$PROJECT_DIR$/sscWeb.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="D:\JavaWork\Result\IDEA_project\sscWebRepo\sscWeb\src\main\java\com\ysmal\ssc\controller\StationController.java" afterPath="$PROJECT_DIR$/src/main/java/com/ysmal/ssc/controller/MainController.java" />
     </list>
     <ignored path="sscWeb.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -175,6 +51,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
+        <option value="Jsp File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -192,7 +70,7 @@
       <GitPushTagMode />
     </option>
     <push-targets>
-      <push-target-info repo="$PROJECT_DIR$/.." source="master" target-remote="origin" target-branch="CleanedCode" />
+      <push-target-info repo="$PROJECT_DIR$/.." source="master" target-remote="origin" target-branch="AddFirstFilter" />
     </push-targets>
   </component>
   <component name="GradleLocalSettings">
@@ -208,11 +86,16 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/static/css/main.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/database-config.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/main.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/ysmal/ssc/dao/VacancyDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ysmal/ssc/dao/VacancyDAOImpl.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/security.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/dialogForms.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ysmal/ssc/model/UserInfo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ysmal/ssc/service/UserService.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/dispatcher-servlet.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/applicationContext.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ysmal/ssc/server/ThreadManager.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/main.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/ysmal/ssc/controller/MainController.java" />
       </list>
     </option>
@@ -295,35 +178,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sscWeb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sscWeb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sscWeb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sscWeb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com.ysmal.ssc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -348,6 +202,39 @@
             <PATH_ELEMENT USER_OBJECT="Root">
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="sscWeb">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
+      <pane id="PackagesPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sscWeb" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sscWeb" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sscWeb" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sscWeb" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com.ysmal.ssc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -393,13 +280,63 @@
   <component name="RunManager" selected="Tomcat Server.Ssc">
     <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
       <deployment />
-      <server-settings />
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="_sscWeb" />
+      </server-settings>
       <predefined_log_file id="Tomcat" enabled="true" />
       <predefined_log_file id="Tomcat Catalina" enabled="true" />
       <predefined_log_file id="Tomcat Manager" enabled="false" />
       <predefined_log_file id="Tomcat Host Manager" enabled="false" />
       <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="49323" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
       <method />
     </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
@@ -669,7 +606,6 @@
     </configuration>
     <configuration default="false" name="Ssc" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 7.0.54" ALTERNATIVE_JRE_ENABLED="false" ALTERNATIVE_JRE_PATH="">
       <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
-      <option name="SHOW_DIALOG_ON_UPDATE" value="false" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="sscWeb:war">
@@ -769,12 +705,24 @@
       <workItem from="1438026436622" duration="748000" />
       <workItem from="1440407882323" duration="5369000" />
       <workItem from="1440413300034" duration="2834000" />
-      <workItem from="1440416589756" duration="187000" />
+      <workItem from="1440416589756" duration="1089000" />
+      <workItem from="1440499840720" duration="11193000" />
+      <workItem from="1440587007588" duration="5658000" />
+      <workItem from="1440592762313" duration="653000" />
+      <workItem from="1440593437198" duration="4599000" />
+      <workItem from="1440598522245" duration="1133000" />
     </task>
+    <task id="LOCAL-00001" summary="Cleaned Code">
+      <created>1440416792772</created>
+      <option name="number" value="00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1440416792772</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44571000" />
+    <option name="totallyTimeSpent" value="68709000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -791,15 +739,15 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3276923" sideWeight="0.49717513" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32704404" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32704404" sideWeight="0.48828697" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3276923" sideWeight="0.49717513" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.8773585" sideWeight="0.5183016" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39937106" sideWeight="0.5241581" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3276923" sideWeight="0.49717513" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3292978" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5880503" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3773585" sideWeight="0.4816984" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3899371" sideWeight="0.47584188" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3276923" sideWeight="0.49717513" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21742313" sideWeight="0.4805492" order="0" side_tool="false" content_ui="combo" />
@@ -837,7 +785,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="13" />
+      <option name="time" value="16" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -846,55 +794,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/main.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/artifacts/sscWeb_war.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/artifacts/sscWeb_war_exploded.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.21691974">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/copyright/profiles_settings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/static/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.20731707">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/static/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="139" column="10" selection-start-line="139" selection-start-column="10" selection-end-line="139" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/static/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6890244">
-          <caret line="153" column="4" selection-start-line="153" selection-start-column="4" selection-end-line="153" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/static/css/images/animated-overlay.gif">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -968,25 +867,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.5844595">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/dataTable.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/security.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5151515">
           <caret line="9" column="88" selection-start-line="9" selection-start-column="88" selection-end-line="9" selection-end-column="88" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -995,13 +879,6 @@
         <state vertical-scroll-proportion="-1.8020477">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/main.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-198.76923">
-          <caret line="304" column="45" selection-start-line="304" selection-start-column="45" selection-end-line="304" selection-end-column="45" />
         </state>
       </provider>
     </entry>
@@ -1017,7 +894,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.14868805">
           <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1032,23 +908,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33527696">
           <caret line="22" column="42" selection-start-line="22" selection-start-column="42" selection-end-line="22" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ysmal/ssc/model/Role.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2973761">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ysmal/ssc/model/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2973761">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1101,42 +960,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ysmal/ssc/server/ScannerThread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.18950437">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ysmal/ssc/server/ThreadManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.941691">
-          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ysmal/ssc/service/VacancyService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.44606414">
-          <caret line="22" column="38" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ysmal/ssc/service/ManagerService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.44606414">
-          <caret line="11" column="38" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ysmal/ssc/service/AbstractScannerThread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.48688048">
-          <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ysmal/ssc/server/Impl/ScanHH.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3469388">
@@ -1172,14 +995,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/dispatcher-servlet.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.37907377">
-          <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ysmal/ssc/server/Impl/SourceHHapi.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1187,26 +1002,167 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ysmal/ssc/controller/MainController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ysmal/ssc/dao/VacancyDAOImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.36956522">
-          <caret line="35" column="14" selection-start-line="35" selection-start-column="14" selection-end-line="35" selection-end-column="14" />
+        <state vertical-scroll-proportion="0.49">
+          <caret line="42" column="110" selection-start-line="42" selection-start-column="110" selection-end-line="42" selection-end-column="110" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/dataTable.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/static/css/login.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.34795323">
+          <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="44" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/static/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/dialogForms.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.0">
+          <caret line="15" column="44" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ysmal/ssc/server/ScannerThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.32336956">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ysmal/ssc/model/Role.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2771739">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ysmal/ssc/model/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2771739">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ysmal/ssc/service/UserDetailsServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.046195652">
+          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ysmal/ssc/service/AbstractScannerThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.23097827">
+          <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/3.1.3.RELEASE/spring-beans-3.1.3.RELEASE.jar!/org/springframework/beans/factory/support/AbstractAutowireCapableBeanFactory.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.35714287">
+          <caret line="740" column="0" selection-start-line="740" selection-start-column="0" selection-end-line="740" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ysmal/ssc/model/UserInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.24011299">
+          <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ysmal/ssc/service/ManagerService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.32692307">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/dispatcher-servlet.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.27493262">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="9" selection-end-column="127" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ysmal/ssc/service/VacancyService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.72979796">
+          <caret line="20" column="38" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ysmal/ssc/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.38636363">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/applicationContext.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.18328841">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ysmal/ssc/dao/VacancyDAOImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ysmal/ssc/server/ThreadManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.49">
-          <caret line="42" column="110" selection-start-line="42" selection-start-column="110" selection-end-line="42" selection-end-column="110" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="20" column="45" selection-start-line="20" selection-start-column="45" selection-end-line="20" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/main.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.5384617">
+          <caret line="325" column="23" selection-start-line="325" selection-start-column="23" selection-end-line="325" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ysmal/ssc/controller/MainController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33888888">
+          <caret line="55" column="47" selection-start-line="55" selection-start-column="47" selection-end-line="55" selection-end-column="47" />
           <folding />
         </state>
       </provider>
