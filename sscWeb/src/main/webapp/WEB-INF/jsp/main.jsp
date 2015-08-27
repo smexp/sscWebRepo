@@ -320,12 +320,17 @@
                     $(this).dialog("close");
 //                    varFilter[0]='FI'; alert($(this).find('#companyName').val());
                     var companyName = $(this).find('#companyName').val();
-                    $.post('../filter', {userName : 'guest' , companyName : companyName }, function(){
-                        alert("OK POST");
+                    $.post('../filter', {companyName : companyName }, function(){
+                        //alert("OK POST");
                         location.href="${pageContext.request.contextPath}/main";
                     });
                 }},
-                {text:'Сбросить', click: function () {  }},
+                {text:'Сбросить', click: function () {
+                    $(this).dialog("close");
+                    $.post('../filter', {companyName : '' }, function(){
+                        location.href="${pageContext.request.contextPath}/main";
+                    });
+                }},
                 {text:'Отмена', click: function () {$(this).dialog("close");}}
             ]
         });

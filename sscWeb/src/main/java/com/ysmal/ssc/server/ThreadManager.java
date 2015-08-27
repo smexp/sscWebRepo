@@ -4,6 +4,7 @@
  */
 package com.ysmal.ssc.server;
 
+import com.ysmal.ssc.model.UserInfo;
 import com.ysmal.ssc.server.Abstract.AbstractSource;
 import com.ysmal.ssc.server.Abstract.AbstractStorage;
 import com.ysmal.ssc.server.Impl.ScanHH;
@@ -24,11 +25,16 @@ public class ThreadManager {
 
     private Map<String, List<ScannerThread>> globalRepo;
     private List<ScannerThread> repository;
+
+    private Map<String, UserInfo> usersLogOn;
+
     private AbstractSource source;
     private AbstractStorage storage;
 
     public ThreadManager() {
         this.globalRepo = new HashMap();
+        this.usersLogOn = new HashMap();
+
         this.repository = new ArrayList<ScannerThread>();
         this.source = new SourceHHapi("https://api.hh.ru/vacancies?area=2&text=Java&period=1&per_page=100");
         this.storage = new StorageDB();
@@ -85,5 +91,14 @@ public class ThreadManager {
         } else {
             return ret;
         }
+    }
+
+    public UserInfo getUserInfo(String userName){
+        return this.usersLogOn.get(userName);
+    }
+
+    public void addOrUpdateUserLogOn(String userName, UserInfo userInfo){
+//        System.out.println("UserInfo="+userInfo.getFilter().toString());
+        this.usersLogOn.put(userName, userInfo);
     }
 }

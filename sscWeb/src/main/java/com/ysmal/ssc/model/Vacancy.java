@@ -13,6 +13,14 @@ import javax.persistence.Version;
 @Table(name = "vacancy")
 public class Vacancy implements Serializable {
 
+    //for null record in table
+    public Vacancy() {
+        this.name = "";
+        this.salary = "";
+        this.companyName = "";
+        this.updatedate = null;
+    }
+
     @Id
     private long id;
     @Version

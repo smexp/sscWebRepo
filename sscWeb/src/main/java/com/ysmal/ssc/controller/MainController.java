@@ -1,9 +1,14 @@
 package com.ysmal.ssc.controller;
 
+import com.ysmal.ssc.dao.UserDAO;
 import com.ysmal.ssc.dao.VacancyDAO;
 import com.ysmal.ssc.dao.VacancyDAOImpl;
+import com.ysmal.ssc.model.UserInfo;
 import com.ysmal.ssc.model.Vacancy;
 
+import com.ysmal.ssc.server.ThreadManager;
+import com.ysmal.ssc.service.UserDetailsServiceImpl;
+import com.ysmal.ssc.service.UserService;
 import com.ysmal.ssc.service.VacancyService;
 import com.ysmal.ssc.util.exception.FindException;
 import java.beans.PropertyEditorSupport;
@@ -28,13 +33,19 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.servlet.View;
+import org.springframework.web.servlet.view.RedirectView;
 
 @Controller
 
 public class MainController {
-
+   @Autowired
+    private UserService usService;
     @Autowired
     private VacancyService vacancyService;
+    @Autowired
+    private ThreadManager mainManager;
+
 
     @RequestMapping(method = RequestMethod.GET, value="jsn")
 	public @ResponseBody List<Vacancy> getInJSON(
@@ -43,22 +54,42 @@ public class MainController {
             @RequestParam(value = "sorting") String sorting,
             @RequestParam(value = "typeSorting") String typeSorting
             ) {
-        return vacancyService.getVacancyRecord("true", page, limit, sorting, typeSorting);
+        Authentication auth = SecurityContextHolder.getContext().getAuthentication();
+        String name = auth.getName();
+
+        return vacancyService.getVacancyRecord(mainManager.getUserInfo(name).getFilter(), page, limit, sorting, typeSorting);
+    }
+
+    @RequestMapping(method = RequestMethod.GET, value = "loginSuccess")
+    public View loginSuccess(Model model) {
+        Authentication auth = SecurityContextHolder.getContext().getAuthentication();
+        String name = auth.getName();
+        UserInfo ui = new UserInfo();
+        mainManager.addOrUpdateUserLogOn(name,ui);
+        return new RedirectView("main");
     }
 
     @RequestMapping(method = RequestMethod.GET, value = "main")
          public String mainForm(Model model) {
-        model.addAttribute("vacancyList", vacancyService.getVacancyRecord("true", 1, 10, "updatedate", "desc"));
+        Authentication auth = SecurityContextHolder.getContext().getAuthentication();
+        String name = auth.getName();
+        model.addAttribute("vacancyList", vacancyService.getVacancyRecord(mainManager.getUserInfo(name).getFilter(), 1, 10, "updatedate", "desc"));
         model.addAttribute("maxPage", vacancyService.getMaxPage().intValue());
         return "main";
     }
 
     @RequestMapping(method = RequestMethod.POST, value = "filter")
     public @ResponseBody String setFilter(
-            @RequestParam(value = "userName") String userName,
+            //@RequestParam(value = "userName") String userName,
             @RequestParam(value = "companyName") String companyName
     ) {
-//        return vacancyService.addThread(name, userName);
+        Authentication auth = SecurityContextHolder.getContext().getAuthentication();
+        String name = auth.getName();
+        if (companyName.isEmpty()){
+            usService.setFilter(name,"true");
+        }
+        else{
+        usService.setFilter(name,"companyname=\'"+companyName+"\'");}
         return "main";
     }
 

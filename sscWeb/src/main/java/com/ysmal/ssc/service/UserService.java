@@ -9,20 +9,20 @@ import org.springframework.stereotype.Service;
 @Service
 public class UserService {
 
-//    @Autowired
-//    private VacancyDAO vacancyDAOImpl;
-//    @Autowired
-//    private ThreadManager mainManager;
+    @Autowired
+    private ThreadManager mainManager;
 
-//   public String setFilter (String userName, String filter){
-//       UserInfo ui = mainManager.getUserInfo(userName);
-//       ui.setFilter(filter);
-//       mainManager.addOrUpdateUserLogOn(userName,ui);
-//       return "main";
-//   };
-//    public void cleanFilter(String userName){
-//        UserInfo ui = mainManager.getUserInfo(userName);
-//        ui.setFilter("");
-//        mainManager.addOrUpdateUserLogOn(userName,ui);
-//    }
+   public String setFilter (String userName, String filter){
+       UserInfo ui = mainManager.getUserInfo(userName);
+       if (ui!=null){
+        ui.setFilter(filter);}
+
+       mainManager.addOrUpdateUserLogOn(userName,ui);
+       return "main";
+   };
+    public void cleanFilter(String userName){
+        UserInfo ui = mainManager.getUserInfo(userName);
+        ui.setFilter("true");
+        mainManager.addOrUpdateUserLogOn(userName,ui);
+    }
 }

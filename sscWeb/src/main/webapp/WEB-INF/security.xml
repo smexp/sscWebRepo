@@ -10,8 +10,9 @@ http://www.springframework.org/schema/security/spring-security-3.1.xsd">
                 <intercept-url pattern="/paths**" access="hasRole('ROLE_SPECIALIST')" />
                 <intercept-url pattern="/vacancy**" access="hasRole('ROLE_SPECIALIST')" />
                 <intercept-url pattern="/main**" access="hasRole('ROLE_SPECIALIST')" />
+                <intercept-url pattern="/filter**" access="hasRole('ROLE_SPECIALIST')" />
                 
-		<form-login login-page="/login.jsp" default-target-url="/main"
+		<form-login login-page="/login.jsp" default-target-url="/loginSuccess"
 			authentication-failure-url="/login.jsp?error=true" />
                         <logout logout-url="/logout" logout-success-url="/"/>
 		

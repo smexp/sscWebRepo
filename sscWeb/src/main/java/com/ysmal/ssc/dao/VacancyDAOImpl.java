@@ -25,16 +25,22 @@ public class VacancyDAOImpl implements VacancyDAO {
 
     public List<Vacancy> getVacancyRecord(String query, int offset, int limit, String sortingField, String typeSorting) {
         List<Vacancy> vacancyList = new ArrayList<>();
-        
-        if (query.equalsIgnoreCase("true")){
-        String queryHQL = "from Vacancy as vacancy order by vacancy." + sortingField + " " + typeSorting;    
-            //System.out.println("QUERY= "+queryHQL);
-        vacancyList = sessionFactory.getCurrentSession().createQuery(queryHQL).setFirstResult(offset).setMaxResults(limit).list();
+        String queryHQL;
+        if (query.equalsIgnoreCase("true")) {
+            queryHQL = "from Vacancy as vacancy order by vacancy." + sortingField + " " + typeSorting;
         }
+        else {
+            queryHQL = "from Vacancy as vacancy where " + query + " order by vacancy." + sortingField + " " + typeSorting;
+        };
+ //       System.out.println("QUERY= "+queryHQL);
+        vacancyList = sessionFactory.getCurrentSession().createQuery(queryHQL).setFirstResult(offset).setMaxResults(limit).list();
+//        System.out.println("vacancy List result="+vacancyList);
         if (vacancyList.size() > 0) {
             return vacancyList;
         } else {
-            return null;
+            Vacancy nullVacancy = new Vacancy();
+            vacancyList.add(0,nullVacancy);
+            return vacancyList;
         }
     }
     

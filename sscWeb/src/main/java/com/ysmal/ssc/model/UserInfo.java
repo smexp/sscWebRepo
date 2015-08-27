@@ -8,7 +8,7 @@ public class UserInfo {
     private Date timeLogOn;
 
     public UserInfo() {
-        this.filter = "";
+        this.filter = "true";
     }
 
     public String getName() {
