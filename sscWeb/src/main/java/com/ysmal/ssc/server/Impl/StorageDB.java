@@ -30,7 +30,8 @@ public class StorageDB implements AbstractStorage {
             if (rInBase != null) {
 
                 s.update(getMappedVacancy(rInBase, r, cal));
-                if (!historyList.isEmpty()) {
+                if (!historyList.isEmpty())
+                {
 //                  SessionFactory sessionFactory = HibernateUtil.getSessionFactory();
                     Session h = sessionFactory.openSession();
 

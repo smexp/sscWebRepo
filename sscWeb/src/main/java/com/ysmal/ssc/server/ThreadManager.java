@@ -41,7 +41,18 @@ public class ThreadManager {
 //        this.storage = new StorageSOUT();
     }
 
+
     public String addScannerThread(String name, String userName) {
+        if (name.isEmpty()||name.matches(""))
+        {
+            name = "JavaThread";
+            this.source = new SourceHHapi("https://api.hh.ru/vacancies?area=2&text=Java&period=1&per_page=100");
+        }
+        else
+        {
+            this.source = new SourceHHapi("https://api.hh.ru/vacancies?area=2&text="+name+"&period=1&per_page=100");
+            name = name + "Thread";
+        }
         ScannerThread th1 = new ScanHH(source, storage, 14400000L, name, userName);
         this.repository.add(th1);
         this.globalRepo.put(userName, this.repository);

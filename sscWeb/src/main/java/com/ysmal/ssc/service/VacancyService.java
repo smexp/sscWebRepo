@@ -34,8 +34,8 @@ public class VacancyService {
     }
     
     @Transactional
-    public Integer getMaxPage (){
-        return vacancyDAOImpl.getMaxPage();
+    public Integer getMaxPage (String filter){
+        return vacancyDAOImpl.getMaxPage(filter);
     }
     
     public String addThread(String name, String userName){

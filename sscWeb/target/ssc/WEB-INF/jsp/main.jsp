@@ -153,6 +153,8 @@
 
 <%--hidding_dialog_about_vacantion--%>
 <%@include file = "dialogForms.jsp" %>
+<%--hidding_dialog_creation--%>
+<%@include file = "createThreadForm.jsp" %>
 
 <%--java_scripts--%>
 <script>
@@ -306,7 +308,7 @@
         });
     }
 
-    //-------------------------------------------
+        //-------------------------------------------
     // set_filter_function
     function setFilter(){
         $( "#filter" ).dialog({
@@ -320,12 +322,49 @@
                     $(this).dialog("close");
 //                    varFilter[0]='FI'; alert($(this).find('#companyName').val());
                     var companyName = $(this).find('#companyName').val();
-                    $.post('../filter', {userName : 'guest' , companyName : companyName }, function(){
-                        alert("OK POST");
+                    $.post('../filter', {companyName : companyName }, function(){
+                        //alert("OK POST");
                         location.href="${pageContext.request.contextPath}/main";
                     });
                 }},
-                {text:'Сбросить', click: function () {  }},
+                {text:'Сбросить', click: function () {
+                    $(this).dialog("close");
+                    $.post('../filter', {companyName : '' }, function(){
+                        location.href="${pageContext.request.contextPath}/main";
+                    });
+                }},
+                {text:'Отмена', click: function () {$(this).dialog("close");}}
+            ]
+        });
+    }
+
+    //-------------------------------------------
+    // set_add_function_dialog_open
+    function openCreateDialog(){
+        $( "#createDialog" ).dialog({
+            autoOpen: true,
+            resizable: false,
+            height:200,
+            width: 500,
+            modal: true,
+            buttons: [
+                {text:'Применить', click: function () {
+                    $(this).dialog("close");
+//                    varFilter[0]='FI'; alert($(this).find('#companyName').val());
+                    var searchWordParam = $(this).find('#searchWordParam').val();
+                    addThread( searchWordParam, "habuma");
+
+                    <%--$.post('../filter', {companyName : companyName }, function(){--%>
+                        <%--//alert("OK POST");--%>
+                        <%--location.href="${pageContext.request.contextPath}/main";--%>
+                    <%--});--%>
+                }},
+                <%--{text:'Сбросить', click: function () {--%>
+                    <%--$(this).dialog("close");--%>
+                    <%--$.post('../filter', {companyName : '' }, function(){--%>
+                        <%--location.href="${pageContext.request.contextPath}/main";--%>
+                    <%--});--%>
+                <%--}},--%>
                 {text:'Отмена', click: function () {$(this).dialog("close");}}
             ]
         });
@@ -429,11 +468,12 @@
     //------------------------------------------
     // add_new_scanner_event
     $("#buttonAbout").on("click", function() {
-        addThread("JavaThread", "haruba");
+        //addThread("JavaThread", "haruba");
+        openCreateDialog();
     });
 
     //-----------------------------------------
-    // get_info_about_running_scanners_event
+    // set_filter_event
     $("#buttonFilter").on("click", function() {
         setFilter();
     });
@@ -450,6 +490,7 @@
     $(document).ready(function()
             {
                 $( "#filter" ).dialog({autoOpen: false});
+                $( "#createDialog" ).dialog({autoOpen: false});
                 $("#buttonDate").click(getInfo(1, 'updatedate', 'desc'));
 
             }

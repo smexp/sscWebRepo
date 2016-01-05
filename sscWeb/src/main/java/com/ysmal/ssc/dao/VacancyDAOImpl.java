@@ -45,8 +45,15 @@ public class VacancyDAOImpl implements VacancyDAO {
     }
     
     @Override
-    public Integer getMaxPage(){
-        Integer count = (Integer)sessionFactory.getCurrentSession().createQuery("from Vacancy").list().size();
+    public Integer getMaxPage(String filter){
+        String queryHQL;
+        if (filter.equalsIgnoreCase("true") || filter.isEmpty()) {
+            queryHQL = "from Vacancy";
+        }
+        else {
+            queryHQL = "from Vacancy as vacancy where " + filter;
+        }
+        Integer count = (Integer)sessionFactory.getCurrentSession().createQuery(queryHQL).list().size();
         count = (count/15)+1;
         return count;
     }

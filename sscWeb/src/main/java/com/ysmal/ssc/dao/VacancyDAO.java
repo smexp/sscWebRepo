@@ -9,7 +9,7 @@ import java.util.List;
 
 public interface VacancyDAO {
     public List<Vacancy> getVacancyRecord(String query, int offset, int limit, String sortingField, String typeSorting);
-    public Integer getMaxPage();
+    public Integer getMaxPage(String filter);
     
 }
 

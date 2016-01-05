@@ -65,7 +65,7 @@ public class MainController {
         Authentication auth = SecurityContextHolder.getContext().getAuthentication();
         String name = auth.getName();
         UserInfo ui = new UserInfo();
-        mainManager.addOrUpdateUserLogOn(name,ui);
+        mainManager.addOrUpdateUserLogOn(name, ui);
         return new RedirectView("main");
     }
 
@@ -74,7 +74,7 @@ public class MainController {
         Authentication auth = SecurityContextHolder.getContext().getAuthentication();
         String name = auth.getName();
         model.addAttribute("vacancyList", vacancyService.getVacancyRecord(mainManager.getUserInfo(name).getFilter(), 1, 10, "updatedate", "desc"));
-        model.addAttribute("maxPage", vacancyService.getMaxPage().intValue());
+        model.addAttribute("maxPage", vacancyService.getMaxPage(mainManager.getUserInfo(name).getFilter()).intValue());
         return "main";
     }
 
@@ -96,17 +96,22 @@ public class MainController {
     @RequestMapping(method = RequestMethod.GET, value="addThread")
 	public @ResponseBody String addThread(
             @RequestParam(value = "name") String name,
-                @RequestParam(value = "userName") String userName
+                @RequestParam(value = "userName") String userNameUnused
             ) {
+        Authentication auth = SecurityContextHolder.getContext().getAuthentication();
+        String userName = auth.getName();
+        //System.out.println("userName="+userName);
         return vacancyService.addThread(name, userName);
     }
     
     @RequestMapping(method = RequestMethod.GET, value="getThreads")
 	public @ResponseBody String getThreads(
-            @RequestParam(value = "name") String name
+            @RequestParam(value = "name") String nameUnused
                 
             ) {
-        return vacancyService.getCurrentThreads(name);
+        Authentication auth = SecurityContextHolder.getContext().getAuthentication();
+        String userName = auth.getName();
+        return vacancyService.getCurrentThreads(userName);
     }
     
 }
