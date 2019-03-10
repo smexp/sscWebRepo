@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="sscWeb:war">
+    <output-path>$PROJECT_DIR$/sscWeb/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>sscWeb</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="ssc.war">
+      <element id="artifact" artifact-name="sscWeb:war exploded" />
+    </root>
+  </artifact>
+</component>
